@@ -1,7 +1,7 @@
 ﻿
 namespace WMS_DANG.基础设置
 {
-    partial class 物料类别
+    partial class 计量单位
     {
         /// <summary>
         /// Required designer variable.
@@ -85,9 +85,9 @@ namespace WMS_DANG.基础设置
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1170, 555);
+            this.splitContainer1.Size = new System.Drawing.Size(1171, 565);
             this.splitContainer1.SplitterDistance = 92;
-            this.splitContainer1.TabIndex = 8;
+            this.splitContainer1.TabIndex = 9;
             // 
             // 修改提交
             // 
@@ -140,7 +140,7 @@ namespace WMS_DANG.基础设置
             this.当前所选.Name = "当前所选";
             this.当前所选.Size = new System.Drawing.Size(219, 20);
             this.当前所选.TabIndex = 4;
-            this.当前所选.Text = "当前选中的物料类别：";
+            this.当前所选.Text = "当前选中的计量单位：";
             // 
             // textBox2
             // 
@@ -195,7 +195,7 @@ namespace WMS_DANG.基础设置
             this.splitContainer2.Panel2.Controls.Add(this.textBox4);
             this.splitContainer2.Panel2.Font = new System.Drawing.Font("华文琥珀", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer2.Size = new System.Drawing.Size(1170, 459);
+            this.splitContainer2.Size = new System.Drawing.Size(1171, 469);
             this.splitContainer2.SplitterDistance = 689;
             this.splitContainer2.TabIndex = 4;
             // 
@@ -248,7 +248,7 @@ namespace WMS_DANG.基础设置
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(689, 459);
+            this.dataGridView1.Size = new System.Drawing.Size(689, 469);
             this.dataGridView1.TabIndex = 2;
             // 
             // button1
@@ -300,14 +300,14 @@ namespace WMS_DANG.基础设置
             this.textBox4.Size = new System.Drawing.Size(121, 23);
             this.textBox4.TabIndex = 1;
             // 
-            // 物料类别
+            // 计量单位
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 555);
+            this.ClientSize = new System.Drawing.Size(1171, 565);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "物料类别";
-            this.Text = "物料类别";
+            this.Name = "计量单位";
+            this.Text = "计量单位";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

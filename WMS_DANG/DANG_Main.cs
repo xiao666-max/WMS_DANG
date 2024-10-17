@@ -39,6 +39,10 @@ namespace WMS_DANG
         public 物料类别 物料类别;
         public 物料信息 物料信息;
         public 巷道信息 巷道信息;
+        public 计量单位 计量单位;
+        public 物料配套 物料配套;
+        public 货位信息 货位信息;
+        public 托盘信息 托盘信息;
 
 
 
@@ -375,6 +379,83 @@ namespace WMS_DANG
             {
                 托盘标签打印.Activate();
                 SetParent((int)托盘标签打印.Handle, (int)this.身.Handle);
+            }
+        }
+        
+
+        private void 计量单位ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (计量单位 == null || 计量单位.IsDisposed)
+            {
+                // 打开新的子窗体
+                计量单位 = new 计量单位();
+                计量单位.TopLevel = false;
+                计量单位.Dock = DockStyle.Fill;
+                计量单位.Parent = this.身;
+                计量单位.Show();
+                SetParent((int)计量单位.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                计量单位.Activate();
+                SetParent((int)计量单位.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 物料配套ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (物料配套 == null || 物料配套.IsDisposed)
+            {
+                // 打开新的子窗体
+                物料配套 = new 物料配套();
+                物料配套.TopLevel = false;
+                物料配套.Dock = DockStyle.Fill;
+                物料配套.Parent = this.身;
+                物料配套.Show();
+                SetParent((int)物料配套.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                物料配套.Activate();
+                SetParent((int)物料配套.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 货位信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (货位信息 == null || 货位信息.IsDisposed)
+            {
+                // 打开新的子窗体
+                货位信息 = new 货位信息();
+                货位信息.TopLevel = false;
+                货位信息.Dock = DockStyle.Fill;
+                货位信息.Parent = this.身;
+                货位信息.Show();
+                SetParent((int)货位信息.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                货位信息.Activate();
+                SetParent((int)货位信息.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 托盘信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (托盘信息 == null || 托盘信息.IsDisposed)
+            {
+                // 打开新的子窗体
+                托盘信息 = new 托盘信息();
+                托盘信息.TopLevel = false;
+                托盘信息.Dock = DockStyle.Fill;
+                托盘信息.Parent = this.身;
+                托盘信息.Show();
+                SetParent((int)托盘信息.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                托盘信息.Activate();
+                SetParent((int)托盘信息.Handle, (int)this.身.Handle);
             }
         }
         #endregion

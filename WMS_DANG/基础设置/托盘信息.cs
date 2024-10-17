@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace WMS_DANG.基础设置
 {
-    public partial class 巷道信息 : Form
+    public partial class 托盘信息 : Form
     {
-        public 巷道信息()
+        public 托盘信息()
         {
             InitializeComponent();
         }
-
-      
     }
 }

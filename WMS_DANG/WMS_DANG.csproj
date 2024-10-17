@@ -93,6 +93,12 @@
     <Compile Include="基础设置\巷道信息.Designer.cs">
       <DependentUpon>巷道信息.cs</DependentUpon>
     </Compile>
+    <Compile Include="基础设置\托盘信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础设置\托盘信息.Designer.cs">
+      <DependentUpon>托盘信息.cs</DependentUpon>
+    </Compile>
     <Compile Include="基础设置\托盘标签打印.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +123,29 @@
     <Compile Include="基础设置\物料类别.Designer.cs">
       <DependentUpon>物料类别.cs</DependentUpon>
     </Compile>
+    <Compile Include="基础设置\物料配套.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础设置\物料配套.Designer.cs">
+      <DependentUpon>物料配套.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\计量单位.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础设置\计量单位.Designer.cs">
+      <DependentUpon>计量单位.cs</DependentUpon>
+    </Compile>
     <Compile Include="基础设置\设备信息.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="基础设置\设备信息.Designer.cs">
       <DependentUpon>设备信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础设置\货位信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础设置\货位信息.Designer.cs">
+      <DependentUpon>货位信息.cs</DependentUpon>
     </Compile>
     <Compile Include="用户管理\用户仓库.cs">
       <SubType>Form</SubType>
@@ -176,6 +200,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form作业管理.resx">
       <DependentUpon>Form作业管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\仓库信息.resx">
+      <DependentUpon>仓库信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\区域信息.resx">
+      <DependentUpon>区域信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\存储策略.resx">
+      <DependentUpon>存储策略.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\巷道信息.resx">
+      <DependentUpon>巷道信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\物料信息.resx">
+      <DependentUpon>物料信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\物料类别.resx">
+      <DependentUpon>物料类别.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\物料配套.resx">
+      <DependentUpon>物料配套.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\计量单位.resx">
+      <DependentUpon>计量单位.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\设备信息.resx">
+      <DependentUpon>设备信息.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="用户管理\用户仓库.resx">
       <DependentUpon>用户仓库.cs</DependentUpon>

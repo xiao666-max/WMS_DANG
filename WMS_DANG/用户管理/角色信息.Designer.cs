@@ -150,6 +150,8 @@ namespace WMS_DANG.用户管理
             // 
             // 删除选中用户
             // 
+            this.删除选中用户.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.删除选中用户.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.删除选中用户.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.删除选中用户.Location = new System.Drawing.Point(446, 10);

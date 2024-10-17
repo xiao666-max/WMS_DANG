@@ -47,11 +47,17 @@ namespace WMS_DANG
             this.区域信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设备信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.巷道信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.物料类别ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.物料信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.货位信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.托盘信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.托盘格子设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.存储策略ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.托盘标签打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.存储策略ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.物料类别ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.计量单位ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.物料信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.物料配套ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.角色信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -223,11 +229,17 @@ namespace WMS_DANG
             this.区域信息ToolStripMenuItem,
             this.设备信息ToolStripMenuItem,
             this.巷道信息ToolStripMenuItem,
-            this.物料类别ToolStripMenuItem,
-            this.物料信息ToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.货位信息ToolStripMenuItem,
+            this.托盘信息ToolStripMenuItem,
             this.托盘格子设置ToolStripMenuItem,
+            this.托盘标签打印ToolStripMenuItem,
             this.存储策略ToolStripMenuItem,
-            this.托盘标签打印ToolStripMenuItem});
+            this.toolStripSeparator2,
+            this.物料类别ToolStripMenuItem,
+            this.计量单位ToolStripMenuItem,
+            this.物料信息ToolStripMenuItem,
+            this.物料配套ToolStripMenuItem});
             this.基础设置ToolStripMenuItem.Font = new System.Drawing.Font("华文新魏", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.基础设置ToolStripMenuItem.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.基础设置ToolStripMenuItem.Name = "基础设置ToolStripMenuItem";
@@ -262,19 +274,24 @@ namespace WMS_DANG
             this.巷道信息ToolStripMenuItem.Text = "巷道信息";
             this.巷道信息ToolStripMenuItem.Click += new System.EventHandler(this.巷道信息ToolStripMenuItem_Click);
             // 
-            // 物料类别ToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.物料类别ToolStripMenuItem.Name = "物料类别ToolStripMenuItem";
-            this.物料类别ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
-            this.物料类别ToolStripMenuItem.Text = "物料类别";
-            this.物料类别ToolStripMenuItem.Click += new System.EventHandler(this.物料类别ToolStripMenuItem_Click);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(257, 6);
             // 
-            // 物料信息ToolStripMenuItem
+            // 货位信息ToolStripMenuItem
             // 
-            this.物料信息ToolStripMenuItem.Name = "物料信息ToolStripMenuItem";
-            this.物料信息ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
-            this.物料信息ToolStripMenuItem.Text = "物料信息";
-            this.物料信息ToolStripMenuItem.Click += new System.EventHandler(this.物料信息ToolStripMenuItem_Click);
+            this.货位信息ToolStripMenuItem.Name = "货位信息ToolStripMenuItem";
+            this.货位信息ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.货位信息ToolStripMenuItem.Text = "货位信息";
+            this.货位信息ToolStripMenuItem.Click += new System.EventHandler(this.货位信息ToolStripMenuItem_Click);
+            // 
+            // 托盘信息ToolStripMenuItem
+            // 
+            this.托盘信息ToolStripMenuItem.Name = "托盘信息ToolStripMenuItem";
+            this.托盘信息ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.托盘信息ToolStripMenuItem.Text = "托盘信息";
+            this.托盘信息ToolStripMenuItem.Click += new System.EventHandler(this.托盘信息ToolStripMenuItem_Click);
             // 
             // 托盘格子设置ToolStripMenuItem
             // 
@@ -283,6 +300,13 @@ namespace WMS_DANG
             this.托盘格子设置ToolStripMenuItem.Text = "托盘格子设置";
             this.托盘格子设置ToolStripMenuItem.Click += new System.EventHandler(this.托盘格子设置ToolStripMenuItem_Click);
             // 
+            // 托盘标签打印ToolStripMenuItem
+            // 
+            this.托盘标签打印ToolStripMenuItem.Name = "托盘标签打印ToolStripMenuItem";
+            this.托盘标签打印ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.托盘标签打印ToolStripMenuItem.Text = "托盘标签打印";
+            this.托盘标签打印ToolStripMenuItem.Click += new System.EventHandler(this.托盘标签打印ToolStripMenuItem_Click);
+            // 
             // 存储策略ToolStripMenuItem
             // 
             this.存储策略ToolStripMenuItem.Name = "存储策略ToolStripMenuItem";
@@ -290,12 +314,39 @@ namespace WMS_DANG
             this.存储策略ToolStripMenuItem.Text = "存储策略";
             this.存储策略ToolStripMenuItem.Click += new System.EventHandler(this.存储策略ToolStripMenuItem_Click);
             // 
-            // 托盘标签打印ToolStripMenuItem
+            // toolStripSeparator2
             // 
-            this.托盘标签打印ToolStripMenuItem.Name = "托盘标签打印ToolStripMenuItem";
-            this.托盘标签打印ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
-            this.托盘标签打印ToolStripMenuItem.Text = "托盘标签打印";
-            this.托盘标签打印ToolStripMenuItem.Click += new System.EventHandler(this.托盘标签打印ToolStripMenuItem_Click);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(257, 6);
+            // 
+            // 物料类别ToolStripMenuItem
+            // 
+            this.物料类别ToolStripMenuItem.Name = "物料类别ToolStripMenuItem";
+            this.物料类别ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.物料类别ToolStripMenuItem.Text = "物料类别";
+            this.物料类别ToolStripMenuItem.Click += new System.EventHandler(this.物料类别ToolStripMenuItem_Click);
+            // 
+            // 计量单位ToolStripMenuItem
+            // 
+            this.计量单位ToolStripMenuItem.Name = "计量单位ToolStripMenuItem";
+            this.计量单位ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.计量单位ToolStripMenuItem.Text = "计量单位";
+            this.计量单位ToolStripMenuItem.Visible = false;
+            this.计量单位ToolStripMenuItem.Click += new System.EventHandler(this.计量单位ToolStripMenuItem_Click);
+            // 
+            // 物料信息ToolStripMenuItem
+            // 
+            this.物料信息ToolStripMenuItem.Name = "物料信息ToolStripMenuItem";
+            this.物料信息ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.物料信息ToolStripMenuItem.Text = "物料信息";
+            this.物料信息ToolStripMenuItem.Click += new System.EventHandler(this.物料信息ToolStripMenuItem_Click);
+            // 
+            // 物料配套ToolStripMenuItem
+            // 
+            this.物料配套ToolStripMenuItem.Name = "物料配套ToolStripMenuItem";
+            this.物料配套ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.物料配套ToolStripMenuItem.Text = "物料配套";
+            this.物料配套ToolStripMenuItem.Click += new System.EventHandler(this.物料配套ToolStripMenuItem_Click);
             // 
             // 用户管理ToolStripMenuItem
             // 
@@ -439,5 +490,11 @@ namespace WMS_DANG
         private System.Windows.Forms.ToolStripMenuItem 角色权限ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 用户仓库ToolStripMenuItem;
         private System.Windows.Forms.Panel 身;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem 货位信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 托盘信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem 计量单位ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 物料配套ToolStripMenuItem;
     }
 }

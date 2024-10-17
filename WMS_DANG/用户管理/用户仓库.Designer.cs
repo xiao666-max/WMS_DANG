@@ -147,6 +147,8 @@ namespace WMS_DANG.用户管理
             // 
             // 全部
             // 
+            this.全部.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.全部.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.全部.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.全部.Location = new System.Drawing.Point(473, 10);
@@ -168,6 +170,8 @@ namespace WMS_DANG.用户管理
             // 
             // 查询
             // 
+            this.查询.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.查询.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.查询.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.查询.Location = new System.Drawing.Point(271, 10);
