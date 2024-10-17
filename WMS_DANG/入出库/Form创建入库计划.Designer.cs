@@ -531,7 +531,7 @@ namespace WMS_DANG.入出库
             this.ClientSize = new System.Drawing.Size(1384, 861);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form创建入库计划";
-            this.Text = "入库计划";
+            this.Text = "创建入库计划";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

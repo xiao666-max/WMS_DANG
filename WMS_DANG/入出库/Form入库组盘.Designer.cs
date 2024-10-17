@@ -30,10 +30,20 @@ namespace WMS_DANG.入出库
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label计划主表信息 = new System.Windows.Forms.Label();
             this.dataGridView作业主表 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button添加至托盘 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel呼叫托盘 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button呼叫托盘 = new System.Windows.Forms.Button();
+            this.panel选择条件 = new System.Windows.Forms.Panel();
+            this.textBox图号 = new System.Windows.Forms.TextBox();
+            this.radioButton图号 = new System.Windows.Forms.RadioButton();
+            this.radioButton周转箱 = new System.Windows.Forms.RadioButton();
+            this.radioButton条码 = new System.Windows.Forms.RadioButton();
+            this.radioButton批次 = new System.Windows.Forms.RadioButton();
             this.label说明1 = new System.Windows.Forms.Label();
             this.checkBox托盘格子是否满 = new System.Windows.Forms.CheckBox();
             this.checkBox起始时间 = new System.Windows.Forms.CheckBox();
@@ -64,20 +74,12 @@ namespace WMS_DANG.入出库
             this.panel9 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel选择条件 = new System.Windows.Forms.Panel();
-            this.label计划主表信息 = new System.Windows.Forms.Label();
-            this.radioButton批次 = new System.Windows.Forms.RadioButton();
-            this.radioButton条码 = new System.Windows.Forms.RadioButton();
-            this.radioButton图号 = new System.Windows.Forms.RadioButton();
-            this.radioButton周转箱 = new System.Windows.Forms.RadioButton();
-            this.textBox图号 = new System.Windows.Forms.TextBox();
-            this.panel呼叫托盘 = new System.Windows.Forms.Panel();
-            this.button呼叫托盘 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel呼叫托盘.SuspendLayout();
+            this.panel选择条件.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView托盘绑定清单)).BeginInit();
@@ -88,8 +90,6 @@ namespace WMS_DANG.入出库
             this.groupBox2.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel选择条件.SuspendLayout();
-            this.panel呼叫托盘.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -100,6 +100,15 @@ namespace WMS_DANG.入出库
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1374, 16);
             this.panel3.TabIndex = 2;
+            // 
+            // label计划主表信息
+            // 
+            this.label计划主表信息.AutoSize = true;
+            this.label计划主表信息.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label计划主表信息.Location = new System.Drawing.Point(0, 0);
+            this.label计划主表信息.Name = "label计划主表信息";
+            this.label计划主表信息.Size = new System.Drawing.Size(0, 12);
+            this.label计划主表信息.TabIndex = 1;
             // 
             // dataGridView作业主表
             // 
@@ -140,6 +149,96 @@ namespace WMS_DANG.入出库
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1374, 42);
             this.panel1.TabIndex = 7;
+            // 
+            // panel呼叫托盘
+            // 
+            this.panel呼叫托盘.Controls.Add(this.label4);
+            this.panel呼叫托盘.Controls.Add(this.button呼叫托盘);
+            this.panel呼叫托盘.Location = new System.Drawing.Point(619, 3);
+            this.panel呼叫托盘.Name = "panel呼叫托盘";
+            this.panel呼叫托盘.Size = new System.Drawing.Size(298, 36);
+            this.panel呼叫托盘.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(119, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(173, 12);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "【生成一个立体库的托盘任务】";
+            // 
+            // button呼叫托盘
+            // 
+            this.button呼叫托盘.Location = new System.Drawing.Point(3, 1);
+            this.button呼叫托盘.Name = "button呼叫托盘";
+            this.button呼叫托盘.Size = new System.Drawing.Size(110, 32);
+            this.button呼叫托盘.TabIndex = 19;
+            this.button呼叫托盘.Text = "呼叫托盘";
+            this.button呼叫托盘.UseVisualStyleBackColor = true;
+            // 
+            // panel选择条件
+            // 
+            this.panel选择条件.Controls.Add(this.textBox图号);
+            this.panel选择条件.Controls.Add(this.radioButton图号);
+            this.panel选择条件.Controls.Add(this.radioButton周转箱);
+            this.panel选择条件.Controls.Add(this.radioButton条码);
+            this.panel选择条件.Controls.Add(this.radioButton批次);
+            this.panel选择条件.Location = new System.Drawing.Point(256, 3);
+            this.panel选择条件.Name = "panel选择条件";
+            this.panel选择条件.Size = new System.Drawing.Size(357, 36);
+            this.panel选择条件.TabIndex = 14;
+            // 
+            // textBox图号
+            // 
+            this.textBox图号.Location = new System.Drawing.Point(248, 8);
+            this.textBox图号.Name = "textBox图号";
+            this.textBox图号.Size = new System.Drawing.Size(97, 21);
+            this.textBox图号.TabIndex = 19;
+            // 
+            // radioButton图号
+            // 
+            this.radioButton图号.AutoSize = true;
+            this.radioButton图号.Location = new System.Drawing.Point(195, 11);
+            this.radioButton图号.Name = "radioButton图号";
+            this.radioButton图号.Size = new System.Drawing.Size(47, 16);
+            this.radioButton图号.TabIndex = 3;
+            this.radioButton图号.TabStop = true;
+            this.radioButton图号.Text = "图号";
+            this.radioButton图号.UseVisualStyleBackColor = true;
+            // 
+            // radioButton周转箱
+            // 
+            this.radioButton周转箱.AutoSize = true;
+            this.radioButton周转箱.Location = new System.Drawing.Point(128, 11);
+            this.radioButton周转箱.Name = "radioButton周转箱";
+            this.radioButton周转箱.Size = new System.Drawing.Size(59, 16);
+            this.radioButton周转箱.TabIndex = 2;
+            this.radioButton周转箱.TabStop = true;
+            this.radioButton周转箱.Text = "周转箱";
+            this.radioButton周转箱.UseVisualStyleBackColor = true;
+            // 
+            // radioButton条码
+            // 
+            this.radioButton条码.AutoSize = true;
+            this.radioButton条码.Location = new System.Drawing.Point(73, 11);
+            this.radioButton条码.Name = "radioButton条码";
+            this.radioButton条码.Size = new System.Drawing.Size(47, 16);
+            this.radioButton条码.TabIndex = 1;
+            this.radioButton条码.TabStop = true;
+            this.radioButton条码.Text = "条码";
+            this.radioButton条码.UseVisualStyleBackColor = true;
+            // 
+            // radioButton批次
+            // 
+            this.radioButton批次.AutoSize = true;
+            this.radioButton批次.Location = new System.Drawing.Point(18, 11);
+            this.radioButton批次.Name = "radioButton批次";
+            this.radioButton批次.Size = new System.Drawing.Size(47, 16);
+            this.radioButton批次.TabIndex = 0;
+            this.radioButton批次.TabStop = true;
+            this.radioButton批次.Text = "批次";
+            this.radioButton批次.UseVisualStyleBackColor = true;
             // 
             // label说明1
             // 
@@ -442,105 +541,6 @@ namespace WMS_DANG.入出库
             this.panel7.Size = new System.Drawing.Size(381, 404);
             this.panel7.TabIndex = 3;
             // 
-            // panel选择条件
-            // 
-            this.panel选择条件.Controls.Add(this.textBox图号);
-            this.panel选择条件.Controls.Add(this.radioButton图号);
-            this.panel选择条件.Controls.Add(this.radioButton周转箱);
-            this.panel选择条件.Controls.Add(this.radioButton条码);
-            this.panel选择条件.Controls.Add(this.radioButton批次);
-            this.panel选择条件.Location = new System.Drawing.Point(256, 3);
-            this.panel选择条件.Name = "panel选择条件";
-            this.panel选择条件.Size = new System.Drawing.Size(357, 36);
-            this.panel选择条件.TabIndex = 14;
-            // 
-            // label计划主表信息
-            // 
-            this.label计划主表信息.AutoSize = true;
-            this.label计划主表信息.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label计划主表信息.Location = new System.Drawing.Point(0, 0);
-            this.label计划主表信息.Name = "label计划主表信息";
-            this.label计划主表信息.Size = new System.Drawing.Size(0, 12);
-            this.label计划主表信息.TabIndex = 1;
-            // 
-            // radioButton批次
-            // 
-            this.radioButton批次.AutoSize = true;
-            this.radioButton批次.Location = new System.Drawing.Point(18, 11);
-            this.radioButton批次.Name = "radioButton批次";
-            this.radioButton批次.Size = new System.Drawing.Size(47, 16);
-            this.radioButton批次.TabIndex = 0;
-            this.radioButton批次.TabStop = true;
-            this.radioButton批次.Text = "批次";
-            this.radioButton批次.UseVisualStyleBackColor = true;
-            // 
-            // radioButton条码
-            // 
-            this.radioButton条码.AutoSize = true;
-            this.radioButton条码.Location = new System.Drawing.Point(73, 11);
-            this.radioButton条码.Name = "radioButton条码";
-            this.radioButton条码.Size = new System.Drawing.Size(47, 16);
-            this.radioButton条码.TabIndex = 1;
-            this.radioButton条码.TabStop = true;
-            this.radioButton条码.Text = "条码";
-            this.radioButton条码.UseVisualStyleBackColor = true;
-            // 
-            // radioButton图号
-            // 
-            this.radioButton图号.AutoSize = true;
-            this.radioButton图号.Location = new System.Drawing.Point(195, 11);
-            this.radioButton图号.Name = "radioButton图号";
-            this.radioButton图号.Size = new System.Drawing.Size(47, 16);
-            this.radioButton图号.TabIndex = 3;
-            this.radioButton图号.TabStop = true;
-            this.radioButton图号.Text = "图号";
-            this.radioButton图号.UseVisualStyleBackColor = true;
-            // 
-            // radioButton周转箱
-            // 
-            this.radioButton周转箱.AutoSize = true;
-            this.radioButton周转箱.Location = new System.Drawing.Point(128, 11);
-            this.radioButton周转箱.Name = "radioButton周转箱";
-            this.radioButton周转箱.Size = new System.Drawing.Size(59, 16);
-            this.radioButton周转箱.TabIndex = 2;
-            this.radioButton周转箱.TabStop = true;
-            this.radioButton周转箱.Text = "周转箱";
-            this.radioButton周转箱.UseVisualStyleBackColor = true;
-            // 
-            // textBox图号
-            // 
-            this.textBox图号.Location = new System.Drawing.Point(248, 8);
-            this.textBox图号.Name = "textBox图号";
-            this.textBox图号.Size = new System.Drawing.Size(97, 21);
-            this.textBox图号.TabIndex = 19;
-            // 
-            // panel呼叫托盘
-            // 
-            this.panel呼叫托盘.Controls.Add(this.label4);
-            this.panel呼叫托盘.Controls.Add(this.button呼叫托盘);
-            this.panel呼叫托盘.Location = new System.Drawing.Point(619, 3);
-            this.panel呼叫托盘.Name = "panel呼叫托盘";
-            this.panel呼叫托盘.Size = new System.Drawing.Size(298, 36);
-            this.panel呼叫托盘.TabIndex = 20;
-            // 
-            // button呼叫托盘
-            // 
-            this.button呼叫托盘.Location = new System.Drawing.Point(3, 1);
-            this.button呼叫托盘.Name = "button呼叫托盘";
-            this.button呼叫托盘.Size = new System.Drawing.Size(110, 32);
-            this.button呼叫托盘.TabIndex = 19;
-            this.button呼叫托盘.Text = "呼叫托盘";
-            this.button呼叫托盘.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(119, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "【生成一个立体库的托盘任务】";
-            // 
             // Form入库组盘
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -548,13 +548,17 @@ namespace WMS_DANG.入出库
             this.ClientSize = new System.Drawing.Size(1384, 861);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form入库组盘";
-            this.Text = "入库计划";
+            this.Text = "入库组盘";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel呼叫托盘.ResumeLayout(false);
+            this.panel呼叫托盘.PerformLayout();
+            this.panel选择条件.ResumeLayout(false);
+            this.panel选择条件.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -571,10 +575,6 @@ namespace WMS_DANG.入出库
             this.groupBox2.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel选择条件.ResumeLayout(false);
-            this.panel选择条件.PerformLayout();
-            this.panel呼叫托盘.ResumeLayout(false);
-            this.panel呼叫托盘.PerformLayout();
             this.ResumeLayout(false);
 
         }
