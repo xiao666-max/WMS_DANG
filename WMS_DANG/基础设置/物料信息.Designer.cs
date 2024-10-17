@@ -85,6 +85,10 @@ namespace WMS_DANG.基础设置
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -115,6 +119,8 @@ namespace WMS_DANG.基础设置
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label20);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox12);
             this.splitContainer1.Panel1.Controls.Add(this.numericUpDown4);
             this.splitContainer1.Panel1.Controls.Add(this.numericUpDown3);
             this.splitContainer1.Panel1.Controls.Add(this.numericUpDown2);
@@ -146,7 +152,7 @@ namespace WMS_DANG.基础设置
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(1199, 597);
-            this.splitContainer1.SplitterDistance = 110;
+            this.splitContainer1.SplitterDistance = 120;
             this.splitContainer1.TabIndex = 9;
             // 
             // numericUpDown4
@@ -318,7 +324,7 @@ namespace WMS_DANG.基础设置
             this.修改提交.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.修改提交.Location = new System.Drawing.Point(1043, 15);
             this.修改提交.Name = "修改提交";
-            this.修改提交.Size = new System.Drawing.Size(144, 82);
+            this.修改提交.Size = new System.Drawing.Size(144, 92);
             this.修改提交.TabIndex = 9;
             this.修改提交.Text = "修改提交";
             this.修改提交.UseVisualStyleBackColor = true;
@@ -370,7 +376,7 @@ namespace WMS_DANG.基础设置
             this.删除选仓库.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.删除选仓库.Location = new System.Drawing.Point(836, 15);
             this.删除选仓库.Name = "删除选仓库";
-            this.删除选仓库.Size = new System.Drawing.Size(191, 82);
+            this.删除选仓库.Size = new System.Drawing.Size(191, 92);
             this.删除选仓库.TabIndex = 0;
             this.删除选仓库.Text = "删除选中";
             this.删除选仓库.UseVisualStyleBackColor = true;
@@ -399,6 +405,8 @@ namespace WMS_DANG.基础设置
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Gray;
+            this.splitContainer2.Panel2.Controls.Add(this.label19);
+            this.splitContainer2.Panel2.Controls.Add(this.textBox11);
             this.splitContainer2.Panel2.Controls.Add(this.numericUpDown8);
             this.splitContainer2.Panel2.Controls.Add(this.comboBox4);
             this.splitContainer2.Panel2.Controls.Add(this.label17);
@@ -424,7 +432,7 @@ namespace WMS_DANG.基础设置
             this.splitContainer2.Panel2.Controls.Add(this.button1);
             this.splitContainer2.Panel2.Font = new System.Drawing.Font("华文琥珀", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer2.Size = new System.Drawing.Size(1199, 483);
+            this.splitContainer2.Size = new System.Drawing.Size(1199, 473);
             this.splitContainer2.SplitterDistance = 689;
             this.splitContainer2.TabIndex = 4;
             // 
@@ -477,7 +485,7 @@ namespace WMS_DANG.基础设置
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(689, 483);
+            this.dataGridView1.Size = new System.Drawing.Size(689, 473);
             this.dataGridView1.TabIndex = 2;
             // 
             // numericUpDown8
@@ -687,12 +695,50 @@ namespace WMS_DANG.基础设置
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(176, 211);
+            this.button1.Location = new System.Drawing.Point(174, 279);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 70);
             this.button1.TabIndex = 11;
             this.button1.Text = "新增";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.Location = new System.Drawing.Point(69, 206);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(37, 14);
+            this.label19.TabIndex = 55;
+            this.label19.Text = "备注";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox11.Location = new System.Drawing.Point(112, 203);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(312, 23);
+            this.textBox11.TabIndex = 54;
+            this.textBox11.UseSystemPasswordChar = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label20.Location = new System.Drawing.Point(43, 96);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(37, 14);
+            this.label20.TabIndex = 57;
+            this.label20.Text = "备注";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox12.Location = new System.Drawing.Point(86, 93);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(645, 23);
+            this.textBox12.TabIndex = 56;
+            this.textBox12.UseSystemPasswordChar = true;
             // 
             // 物料信息
             // 
@@ -778,5 +824,9 @@ namespace WMS_DANG.基础设置
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox11;
     }
 }

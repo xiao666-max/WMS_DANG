@@ -240,6 +240,18 @@
     <EmbeddedResource Include="入出库\Form作业管理.resx">
       <DependentUpon>Form作业管理.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\存储策略.resx">
+      <DependentUpon>存储策略.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\物料信息.resx">
+      <DependentUpon>物料信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\物料类别.resx">
+      <DependentUpon>物料类别.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\物料配套.resx">
+      <DependentUpon>物料配套.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="用户管理\用户仓库.resx">
       <DependentUpon>用户仓库.cs</DependentUpon>
     </EmbeddedResource>
