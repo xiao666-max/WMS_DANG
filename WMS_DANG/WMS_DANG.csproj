@@ -57,11 +57,47 @@
     <Compile Include="DANG_Main.Designer.cs">
       <DependentUpon>DANG_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="入出库\Form出库计划设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form出库计划设置.Designer.cs">
+      <DependentUpon>Form出库计划设置.cs</DependentUpon>
+    </Compile>
     <Compile Include="入出库\Form作业管理.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="入出库\Form作业管理.Designer.cs">
       <DependentUpon>Form作业管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="入出库\Form出库计划.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form出库计划.Designer.cs">
+      <DependentUpon>Form出库计划.cs</DependentUpon>
+    </Compile>
+    <Compile Include="入出库\Form空托盘出库.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form空托盘出库.Designer.cs">
+      <DependentUpon>Form空托盘出库.cs</DependentUpon>
+    </Compile>
+    <Compile Include="入出库\Form返修件处理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form返修件处理.Designer.cs">
+      <DependentUpon>Form返修件处理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="入出库\Form入库组盘.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form入库组盘.Designer.cs">
+      <DependentUpon>Form入库组盘.cs</DependentUpon>
+    </Compile>
+    <Compile Include="入出库\Form创建入库计划.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form创建入库计划.Designer.cs">
+      <DependentUpon>Form创建入库计划.cs</DependentUpon>
     </Compile>
     <Compile Include="入出库\Form入库计划.cs">
       <SubType>Form</SubType>
@@ -198,35 +234,11 @@
     <EmbeddedResource Include="DANG_Main.resx">
       <DependentUpon>DANG_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="入出库\Form出库计划设置.resx">
+      <DependentUpon>Form出库计划设置.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form作业管理.resx">
       <DependentUpon>Form作业管理.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\仓库信息.resx">
-      <DependentUpon>仓库信息.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\区域信息.resx">
-      <DependentUpon>区域信息.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\存储策略.resx">
-      <DependentUpon>存储策略.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\巷道信息.resx">
-      <DependentUpon>巷道信息.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\物料信息.resx">
-      <DependentUpon>物料信息.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\物料类别.resx">
-      <DependentUpon>物料类别.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\物料配套.resx">
-      <DependentUpon>物料配套.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\计量单位.resx">
-      <DependentUpon>计量单位.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="基础设置\设备信息.resx">
-      <DependentUpon>设备信息.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="用户管理\用户仓库.resx">
       <DependentUpon>用户仓库.cs</DependentUpon>

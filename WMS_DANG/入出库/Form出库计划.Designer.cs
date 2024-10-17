@@ -1,7 +1,7 @@
 ﻿
 namespace WMS_DANG.入出库
 {
-    partial class Form入库计划
+    partial class Form出库计划
     {
         /// <summary>
         /// Required designer variable.
@@ -325,14 +325,14 @@ namespace WMS_DANG.入出库
             this.panel5.Size = new System.Drawing.Size(1374, 393);
             this.panel5.TabIndex = 8;
             // 
-            // Form入库计划
+            // Form出库计划
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1384, 861);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form入库计划";
-            this.Text = "入库计划";
+            this.Name = "Form出库计划";
+            this.Text = "出库计划";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).EndInit();
