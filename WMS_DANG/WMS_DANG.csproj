@@ -57,6 +57,12 @@
     <Compile Include="DANG_Main.Designer.cs">
       <DependentUpon>DANG_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="入出库\Form出库确认.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form出库确认.Designer.cs">
+      <DependentUpon>Form出库确认.cs</DependentUpon>
+    </Compile>
     <Compile Include="入出库\Form出库计划设置.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     <Compile Include="通用基础\系统软键盘.cs" />
     <EmbeddedResource Include="DANG_Main.resx">
       <DependentUpon>DANG_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="入出库\Form出库确认.resx">
+      <DependentUpon>Form出库确认.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form出库计划设置.resx">
       <DependentUpon>Form出库计划设置.cs</DependentUpon>
