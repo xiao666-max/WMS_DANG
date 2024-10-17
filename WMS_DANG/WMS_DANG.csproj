@@ -75,6 +75,12 @@
     <Compile Include="入出库\Form出库计划.Designer.cs">
       <DependentUpon>Form出库计划.cs</DependentUpon>
     </Compile>
+    <Compile Include="入出库\Form空托盘出库.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="入出库\Form空托盘出库.Designer.cs">
+      <DependentUpon>Form空托盘出库.cs</DependentUpon>
+    </Compile>
     <Compile Include="入出库\Form返修件处理.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form出库计划.resx">
       <DependentUpon>Form出库计划.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="入出库\Form空托盘出库.resx">
+      <DependentUpon>Form空托盘出库.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form返修件处理.resx">
       <DependentUpon>Form返修件处理.cs</DependentUpon>
