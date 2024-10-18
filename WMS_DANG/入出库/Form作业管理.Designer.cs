@@ -184,11 +184,11 @@ namespace WMS_DANG.入出库
             // dataGridView作业明细
             // 
             this.dataGridView作业明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业明细.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业明细.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView作业明细.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView作业明细.Location = new System.Drawing.Point(0, 107);
             this.dataGridView作业明细.Name = "dataGridView作业明细";
             this.dataGridView作业明细.RowTemplate.Height = 23;
-            this.dataGridView作业明细.Size = new System.Drawing.Size(1374, 403);
+            this.dataGridView作业明细.Size = new System.Drawing.Size(1374, 296);
             this.dataGridView作业明细.TabIndex = 0;
             // 
             // panel4
@@ -345,11 +345,11 @@ namespace WMS_DANG.入出库
             // dataGridView作业主表
             // 
             this.dataGridView作业主表.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业主表.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业主表.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView作业主表.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView作业主表.Location = new System.Drawing.Point(0, 64);
             this.dataGridView作业主表.Name = "dataGridView作业主表";
             this.dataGridView作业主表.RowTemplate.Height = 23;
-            this.dataGridView作业主表.Size = new System.Drawing.Size(1374, 294);
+            this.dataGridView作业主表.Size = new System.Drawing.Size(1374, 230);
             this.dataGridView作业主表.TabIndex = 0;
             // 
             // Form作业管理

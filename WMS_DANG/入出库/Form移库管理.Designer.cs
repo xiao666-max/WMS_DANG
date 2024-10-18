@@ -35,8 +35,18 @@ namespace WMS_DANG.入出库
             this.label作业明细数量 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label货位 = new System.Windows.Forms.Label();
             this.dataGridView货位 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button查询货位 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.button生成作业 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label列 = new System.Windows.Forms.Label();
@@ -61,21 +71,14 @@ namespace WMS_DANG.入出库
             this.button启动计划 = new System.Windows.Forms.Button();
             this.label库存明细 = new System.Windows.Forms.Label();
             this.dataGridView库存明细 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button查询货位 = new System.Windows.Forms.Button();
-            this.label货位 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView货位)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown列)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown层)).BeginInit();
@@ -83,9 +86,6 @@ namespace WMS_DANG.入出库
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView库存明细)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // label托盘号
@@ -155,14 +155,23 @@ namespace WMS_DANG.入出库
             this.panel6.Size = new System.Drawing.Size(1374, 38);
             this.panel6.TabIndex = 2;
             // 
+            // label货位
+            // 
+            this.label货位.AutoSize = true;
+            this.label货位.Location = new System.Drawing.Point(12, 13);
+            this.label货位.Name = "label货位";
+            this.label货位.Size = new System.Drawing.Size(29, 12);
+            this.label货位.TabIndex = 2;
+            this.label货位.Text = "货位";
+            // 
             // dataGridView货位
             // 
             this.dataGridView货位.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView货位.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView货位.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView货位.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView货位.Location = new System.Drawing.Point(0, 114);
             this.dataGridView货位.Name = "dataGridView货位";
             this.dataGridView货位.RowTemplate.Height = 23;
-            this.dataGridView货位.Size = new System.Drawing.Size(1374, 387);
+            this.dataGridView货位.Size = new System.Drawing.Size(1374, 273);
             this.dataGridView货位.TabIndex = 0;
             // 
             // panel4
@@ -182,6 +191,85 @@ namespace WMS_DANG.入出库
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1374, 60);
             this.panel4.TabIndex = 7;
+            // 
+            // button查询货位
+            // 
+            this.button查询货位.Location = new System.Drawing.Point(1087, 15);
+            this.button查询货位.Name = "button查询货位";
+            this.button查询货位.Size = new System.Drawing.Size(110, 32);
+            this.button查询货位.TabIndex = 53;
+            this.button查询货位.Text = "查询";
+            this.button查询货位.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(19, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(17, 12);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "列";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(51, 32);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(243, 21);
+            this.numericUpDown1.TabIndex = 59;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(709, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 12);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "层";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(738, 6);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(243, 21);
+            this.numericUpDown2.TabIndex = 57;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(364, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 12);
+            this.label5.TabIndex = 56;
+            this.label5.Text = "排";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(394, 6);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(243, 21);
+            this.numericUpDown3.TabIndex = 55;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(51, 6);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(243, 20);
+            this.comboBox1.TabIndex = 54;
+            this.comboBox1.Text = "==请选择==";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(7, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "区域";
             // 
             // button生成作业
             // 
@@ -332,7 +420,7 @@ namespace WMS_DANG.入出库
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(624, 37);
+            this.button1.Location = new System.Drawing.Point(624, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 32);
             this.button1.TabIndex = 17;
@@ -405,100 +493,12 @@ namespace WMS_DANG.入出库
             // dataGridView库存明细
             // 
             this.dataGridView库存明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView库存明细.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView库存明细.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView库存明细.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView库存明细.Location = new System.Drawing.Point(0, 46);
             this.dataGridView库存明细.Name = "dataGridView库存明细";
             this.dataGridView库存明细.RowTemplate.Height = 23;
-            this.dataGridView库存明细.Size = new System.Drawing.Size(1374, 258);
+            this.dataGridView库存明细.Size = new System.Drawing.Size(1374, 212);
             this.dataGridView库存明细.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(19, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 12);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "列";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(51, 32);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(243, 21);
-            this.numericUpDown1.TabIndex = 59;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(709, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 12);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "层";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(738, 6);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(243, 21);
-            this.numericUpDown2.TabIndex = 57;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(364, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 12);
-            this.label5.TabIndex = 56;
-            this.label5.Text = "排";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(394, 6);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(243, 21);
-            this.numericUpDown3.TabIndex = 55;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(51, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(243, 20);
-            this.comboBox1.TabIndex = 54;
-            this.comboBox1.Text = "==请选择==";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(7, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 53;
-            this.label6.Text = "区域";
-            // 
-            // button查询货位
-            // 
-            this.button查询货位.Location = new System.Drawing.Point(1087, 15);
-            this.button查询货位.Name = "button查询货位";
-            this.button查询货位.Size = new System.Drawing.Size(110, 32);
-            this.button查询货位.TabIndex = 53;
-            this.button查询货位.Text = "查询";
-            this.button查询货位.UseVisualStyleBackColor = true;
-            // 
-            // label货位
-            // 
-            this.label货位.AutoSize = true;
-            this.label货位.Location = new System.Drawing.Point(12, 13);
-            this.label货位.Name = "label货位";
-            this.label货位.Size = new System.Drawing.Size(29, 12);
-            this.label货位.TabIndex = 2;
-            this.label货位.Text = "货位";
             // 
             // Form移库管理
             // 
@@ -516,6 +516,9 @@ namespace WMS_DANG.入出库
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView货位)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown列)).EndInit();
@@ -525,9 +528,6 @@ namespace WMS_DANG.入出库
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView库存明细)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
 
         }
