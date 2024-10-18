@@ -542,6 +542,7 @@ namespace WMS_DANG
             this.空托盘出库ToolStripMenuItem.Name = "空托盘出库ToolStripMenuItem";
             this.空托盘出库ToolStripMenuItem.Size = new System.Drawing.Size(264, 38);
             this.空托盘出库ToolStripMenuItem.Text = "空托盘出库";
+            this.空托盘出库ToolStripMenuItem.Visible = false;
             this.空托盘出库ToolStripMenuItem.Click += new System.EventHandler(this.空托盘出库ToolStripMenuItem_Click);
             // 
             // 出库确认ToolStripMenuItem

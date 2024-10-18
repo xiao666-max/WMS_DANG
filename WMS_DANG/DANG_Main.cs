@@ -61,7 +61,9 @@ namespace WMS_DANG
         public Form入库组盘 form入库组盘1;
         public Form移库管理 form移库管理1;
         public Form作业管理 form作业管理1;
-        public Form入库呼叫托盘 form入库呼叫托盘1; 
+        public Form入库呼叫托盘 form入库呼叫托盘1;
+        public Form分拣管理 form分拣管理1;
+        public Form拆分条码 form拆分条码1;
 
 
 
@@ -663,32 +665,119 @@ namespace WMS_DANG
 
         private void 分拣管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (form分拣管理1 == null || form分拣管理1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form分拣管理1 = new Form分拣管理();
+                form分拣管理1.TopLevel = false;
+                form分拣管理1.Dock = DockStyle.Fill;
+                form分拣管理1.Parent = this.身;
+                form分拣管理1.Show();
+                SetParent((int)form分拣管理1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form分拣管理1.Activate();
+                SetParent((int)form分拣管理1.Handle, (int)this.身.Handle);
+            }
         }
 
         private void 空托盘出库ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ///无此功能
+            ///
+            return;
+            if (form空托盘出库1 == null || form空托盘出库1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form空托盘出库1 = new Form空托盘出库();
+                form空托盘出库1.TopLevel = false;
+                form空托盘出库1.Dock = DockStyle.Fill;
+                form空托盘出库1.Parent = this.身;
+                form空托盘出库1.Show();
+                SetParent((int)form空托盘出库1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form空托盘出库1.Activate();
+                SetParent((int)form空托盘出库1.Handle, (int)this.身.Handle);
+            }
         }
 
         private void 出库确认ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (form出库确认1 == null || form出库确认1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form出库确认1 = new Form出库确认();
+                form出库确认1.TopLevel = false;
+                form出库确认1.Dock = DockStyle.Fill;
+                form出库确认1.Parent = this.身;
+                form出库确认1.Show();
+                SetParent((int)form出库确认1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form出库确认1.Activate();
+                SetParent((int)form出库确认1.Handle, (int)this.身.Handle);
+            }
         }
 
         private void 拆分条码ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (form拆分条码1 == null || form拆分条码1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form拆分条码1 = new Form拆分条码();
+                form拆分条码1.TopLevel = false;
+                form拆分条码1.Dock = DockStyle.Fill;
+                form拆分条码1.Parent = this.身;
+                form拆分条码1.Show();
+                SetParent((int)form拆分条码1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form拆分条码1.Activate();
+                SetParent((int)form拆分条码1.Handle, (int)this.身.Handle);
+            }
         }
 
         private void 移库管理ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            if (form移库管理1 == null || form移库管理1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form移库管理1 = new Form移库管理();
+                form移库管理1.TopLevel = false;
+                form移库管理1.Dock = DockStyle.Fill;
+                form移库管理1.Parent = this.身;
+                form移库管理1.Show();
+                SetParent((int)form移库管理1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form移库管理1.Activate();
+                SetParent((int)form移库管理1.Handle, (int)this.身.Handle);
+            }
         }
 
         private void 作业管理ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            if (form作业管理1 == null || form作业管理1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form作业管理1 = new Form作业管理();
+                form作业管理1.TopLevel = false;
+                form作业管理1.Dock = DockStyle.Fill;
+                form作业管理1.Parent = this.身;
+                form作业管理1.Show();
+                SetParent((int)form作业管理1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form作业管理1.Activate();
+                SetParent((int)form作业管理1.Handle, (int)this.身.Handle);
+            }
         }
     }
 }
