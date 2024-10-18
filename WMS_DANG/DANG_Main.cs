@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using WMS_DANG.基础设置;
 using WMS_DANG.用户管理;
 using WMS_DANG.通用基础;
+using WMS_DANG.货位管理;
 
 namespace WMS_DANG
 {
@@ -41,8 +42,10 @@ namespace WMS_DANG
         public 巷道信息 巷道信息;
         public 计量单位 计量单位;
         public 物料配套 物料配套;
-        public 货位信息 货位信息;
         public 托盘信息 托盘信息;
+        public 货位初始化 货位初始化;
+        public 货位状态管理 货位状态管理;
+        public 空货位查询 空货位查询;
 
 
 
@@ -421,24 +424,7 @@ namespace WMS_DANG
             }
         }
 
-        private void 货位信息ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (货位信息 == null || 货位信息.IsDisposed)
-            {
-                // 打开新的子窗体
-                货位信息 = new 货位信息();
-                货位信息.TopLevel = false;
-                货位信息.Dock = DockStyle.Fill;
-                货位信息.Parent = this.身;
-                货位信息.Show();
-                SetParent((int)货位信息.Handle, (int)this.身.Handle);
-            }
-            else
-            {
-                货位信息.Activate();
-                SetParent((int)货位信息.Handle, (int)this.身.Handle);
-            }
-        }
+
 
         private void 托盘信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -459,5 +445,62 @@ namespace WMS_DANG
             }
         }
         #endregion
+
+        private void 货位初始化ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (货位初始化 == null || 货位初始化.IsDisposed)
+            {
+                // 打开新的子窗体
+                货位初始化 = new 货位初始化();
+                货位初始化.TopLevel = false;
+                货位初始化.Dock = DockStyle.Fill;
+                货位初始化.Parent = this.身;
+                货位初始化.Show();
+                SetParent((int)货位初始化.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                货位初始化.Activate();
+                SetParent((int)货位初始化.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 货位状态管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (货位状态管理 == null || 货位状态管理.IsDisposed)
+            {
+                // 打开新的子窗体
+                货位状态管理 = new 货位状态管理();
+                货位状态管理.TopLevel = false;
+                货位状态管理.Dock = DockStyle.Fill;
+                货位状态管理.Parent = this.身;
+                货位状态管理.Show();
+                SetParent((int)货位状态管理.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                货位状态管理.Activate();
+                SetParent((int)货位状态管理.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 空货位查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (空货位查询 == null || 空货位查询.IsDisposed)
+            {
+                // 打开新的子窗体
+                空货位查询 = new 空货位查询();
+                空货位查询.TopLevel = false;
+                空货位查询.Dock = DockStyle.Fill;
+                空货位查询.Parent = this.身;
+                空货位查询.Show();
+                SetParent((int)空货位查询.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                空货位查询.Activate();
+                SetParent((int)空货位查询.Handle, (int)this.身.Handle);
+            }
+        }
     }
 }

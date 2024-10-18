@@ -1,7 +1,7 @@
 ﻿
-namespace WMS_DANG.基础设置
+namespace WMS_DANG.货位管理
 {
-    partial class 货位信息
+    partial class 货位初始化
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace WMS_DANG.基础设置
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "货位信息";
+            this.Text = "货位初始化";
         }
 
         #endregion

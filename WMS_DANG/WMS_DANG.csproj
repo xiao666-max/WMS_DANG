@@ -177,12 +177,6 @@
     <Compile Include="基础设置\设备信息.Designer.cs">
       <DependentUpon>设备信息.cs</DependentUpon>
     </Compile>
-    <Compile Include="基础设置\货位信息.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="基础设置\货位信息.Designer.cs">
-      <DependentUpon>货位信息.cs</DependentUpon>
-    </Compile>
     <Compile Include="用户管理\用户仓库.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +220,24 @@
     </Compile>
     <Compile Include="用户管理\修改密码.Designer.cs">
       <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货位管理\空货位查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货位管理\空货位查询.Designer.cs">
+      <DependentUpon>空货位查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货位管理\货位初始化.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货位管理\货位初始化.Designer.cs">
+      <DependentUpon>货位初始化.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货位管理\货位状态管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货位管理\货位状态管理.Designer.cs">
+      <DependentUpon>货位状态管理.cs</DependentUpon>
     </Compile>
     <Compile Include="通用基础\子窗体通用.cs" />
     <Compile Include="通用基础\登录信息全局变量.cs" />

@@ -35,6 +35,14 @@ namespace WMS_DANG.基础设置
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -52,17 +60,6 @@ namespace WMS_DANG.基础设置
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
@@ -81,10 +78,17 @@ namespace WMS_DANG.基础设置
             this.label16 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -92,10 +96,6 @@ namespace WMS_DANG.基础设置
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -144,8 +144,76 @@ namespace WMS_DANG.基础设置
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(1253, 568);
-            this.splitContainer1.SplitterDistance = 120;
+            this.splitContainer1.SplitterDistance = 140;
             this.splitContainer1.TabIndex = 10;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(261, 65);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(100, 21);
+            this.numericUpDown3.TabIndex = 66;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(203, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 14);
+            this.label1.TabIndex = 65;
+            this.label1.Text = "目的排";
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(449, 66);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(100, 21);
+            this.numericUpDown4.TabIndex = 64;
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Location = new System.Drawing.Point(631, 67);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(100, 21);
+            this.numericUpDown9.TabIndex = 63;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Location = new System.Drawing.Point(573, 70);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 14);
+            this.label8.TabIndex = 62;
+            this.label8.Text = "目的层";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(391, 70);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 14);
+            this.label9.TabIndex = 61;
+            this.label9.Text = "目的列";
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.Location = new System.Drawing.Point(261, 38);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(100, 21);
+            this.numericUpDown10.TabIndex = 60;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(203, 43);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 14);
+            this.label7.TabIndex = 58;
+            this.label7.Text = "起始排";
             // 
             // label20
             // 
@@ -226,7 +294,7 @@ namespace WMS_DANG.基础设置
             this.修改提交.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.修改提交.Location = new System.Drawing.Point(1043, 15);
             this.修改提交.Name = "修改提交";
-            this.修改提交.Size = new System.Drawing.Size(144, 92);
+            this.修改提交.Size = new System.Drawing.Size(144, 112);
             this.修改提交.TabIndex = 9;
             this.修改提交.Text = "修改提交";
             this.修改提交.UseVisualStyleBackColor = true;
@@ -255,7 +323,7 @@ namespace WMS_DANG.基础设置
             // 
             this.当前所选.AutoSize = true;
             this.当前所选.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.当前所选.Location = new System.Drawing.Point(12, 9);
+            this.当前所选.Location = new System.Drawing.Point(12, 15);
             this.当前所选.Name = "当前所选";
             this.当前所选.Size = new System.Drawing.Size(177, 20);
             this.当前所选.TabIndex = 4;
@@ -278,7 +346,7 @@ namespace WMS_DANG.基础设置
             this.删除选仓库.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.删除选仓库.Location = new System.Drawing.Point(836, 15);
             this.删除选仓库.Name = "删除选仓库";
-            this.删除选仓库.Size = new System.Drawing.Size(191, 92);
+            this.删除选仓库.Size = new System.Drawing.Size(191, 112);
             this.删除选仓库.TabIndex = 0;
             this.删除选仓库.Text = "删除选中";
             this.删除选仓库.UseVisualStyleBackColor = true;
@@ -328,9 +396,9 @@ namespace WMS_DANG.基础设置
             this.splitContainer2.Panel2.Controls.Add(this.label19);
             this.splitContainer2.Panel2.Controls.Add(this.textBox11);
             this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Panel2.Font = new System.Drawing.Font("华文琥珀", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.splitContainer2.Panel2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer2.Size = new System.Drawing.Size(1253, 444);
+            this.splitContainer2.Size = new System.Drawing.Size(1253, 424);
             this.splitContainer2.SplitterDistance = 689;
             this.splitContainer2.TabIndex = 4;
             // 
@@ -383,112 +451,15 @@ namespace WMS_DANG.基础设置
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(689, 444);
+            this.dataGridView1.Size = new System.Drawing.Size(689, 424);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.Location = new System.Drawing.Point(31, 138);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(37, 14);
-            this.label19.TabIndex = 55;
-            this.label19.Text = "备注";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox11.Location = new System.Drawing.Point(74, 135);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(470, 23);
-            this.textBox11.TabIndex = 54;
-            this.textBox11.UseSystemPasswordChar = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(222, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 70);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "新增";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown10
-            // 
-            this.numericUpDown10.Location = new System.Drawing.Point(261, 38);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(100, 21);
-            this.numericUpDown10.TabIndex = 60;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(203, 43);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 14);
-            this.label7.TabIndex = 58;
-            this.label7.Text = "起始排";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(261, 65);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(100, 21);
-            this.numericUpDown3.TabIndex = 66;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(203, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 14);
-            this.label1.TabIndex = 65;
-            this.label1.Text = "目的排";
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Location = new System.Drawing.Point(449, 66);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(100, 21);
-            this.numericUpDown4.TabIndex = 64;
-            // 
-            // numericUpDown9
-            // 
-            this.numericUpDown9.Location = new System.Drawing.Point(631, 67);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(100, 21);
-            this.numericUpDown9.TabIndex = 63;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(573, 70);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 14);
-            this.label8.TabIndex = 62;
-            this.label8.Text = "目的层";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(391, 70);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 14);
-            this.label9.TabIndex = 61;
-            this.label9.Text = "目的列";
             // 
             // numericUpDown5
             // 
+            this.numericUpDown5.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown5.Location = new System.Drawing.Point(74, 103);
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown5.Size = new System.Drawing.Size(100, 23);
             this.numericUpDown5.TabIndex = 84;
             // 
             // label2
@@ -503,16 +474,18 @@ namespace WMS_DANG.基础设置
             // 
             // numericUpDown6
             // 
+            this.numericUpDown6.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown6.Location = new System.Drawing.Point(262, 104);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown6.Size = new System.Drawing.Size(100, 23);
             this.numericUpDown6.TabIndex = 82;
             // 
             // numericUpDown7
             // 
+            this.numericUpDown7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown7.Location = new System.Drawing.Point(444, 105);
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown7.Size = new System.Drawing.Size(100, 23);
             this.numericUpDown7.TabIndex = 81;
             // 
             // label3
@@ -537,9 +510,10 @@ namespace WMS_DANG.基础设置
             // 
             // numericUpDown8
             // 
+            this.numericUpDown8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown8.Location = new System.Drawing.Point(74, 76);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown8.Size = new System.Drawing.Size(100, 23);
             this.numericUpDown8.TabIndex = 78;
             // 
             // label11
@@ -554,16 +528,18 @@ namespace WMS_DANG.基础设置
             // 
             // numericUpDown11
             // 
+            this.numericUpDown11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown11.Location = new System.Drawing.Point(262, 77);
             this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown11.Size = new System.Drawing.Size(100, 23);
             this.numericUpDown11.TabIndex = 76;
             // 
             // numericUpDown12
             // 
+            this.numericUpDown12.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown12.Location = new System.Drawing.Point(444, 78);
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown12.Size = new System.Drawing.Size(100, 23);
             this.numericUpDown12.TabIndex = 75;
             // 
             // comboBox2
@@ -571,7 +547,7 @@ namespace WMS_DANG.基础设置
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(444, 49);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.Size = new System.Drawing.Size(100, 22);
             this.comboBox2.TabIndex = 74;
             // 
             // label12
@@ -642,6 +618,36 @@ namespace WMS_DANG.基础设置
             this.textBox4.TabIndex = 67;
             this.textBox4.UseSystemPasswordChar = true;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label19.Location = new System.Drawing.Point(31, 138);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(37, 14);
+            this.label19.TabIndex = 55;
+            this.label19.Text = "备注";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox11.Location = new System.Drawing.Point(74, 135);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(470, 23);
+            this.textBox11.TabIndex = 54;
+            this.textBox11.UseSystemPasswordChar = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(222, 186);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 70);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "新增";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // 存储策略
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -655,6 +661,10 @@ namespace WMS_DANG.基础设置
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -663,10 +673,6 @@ namespace WMS_DANG.基础设置
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();

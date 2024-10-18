@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WMS_DANG.基础设置
+namespace WMS_DANG.货位管理
 {
-    public partial class 货位信息 : Form
+    public partial class 货位初始化 : Form
     {
-        public 货位信息()
+        public 货位初始化()
         {
             InitializeComponent();
         }

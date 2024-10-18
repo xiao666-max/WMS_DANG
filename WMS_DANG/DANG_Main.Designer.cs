@@ -48,7 +48,6 @@ namespace WMS_DANG
             this.设备信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.巷道信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.货位信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.托盘信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.托盘格子设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.托盘标签打印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,6 +66,10 @@ namespace WMS_DANG
             this.登录人 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.身 = new System.Windows.Forms.Panel();
+            this.货位管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.货位初始化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.货位状态管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.空货位查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.头.SuspendLayout();
             this.系统菜单.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.系统管理)).BeginInit();
@@ -214,10 +217,11 @@ namespace WMS_DANG
             this.导航栏.Font = new System.Drawing.Font("华文新魏", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.导航栏.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.基础设置ToolStripMenuItem,
-            this.用户管理ToolStripMenuItem});
+            this.用户管理ToolStripMenuItem,
+            this.货位管理ToolStripMenuItem});
             this.导航栏.Location = new System.Drawing.Point(251, 51);
             this.导航栏.Name = "导航栏";
-            this.导航栏.Size = new System.Drawing.Size(410, 38);
+            this.导航栏.Size = new System.Drawing.Size(431, 38);
             this.导航栏.TabIndex = 0;
             this.导航栏.Text = "menuStrip1";
             this.导航栏.MouseEnter += new System.EventHandler(this.导航栏显示状态);
@@ -230,7 +234,6 @@ namespace WMS_DANG
             this.设备信息ToolStripMenuItem,
             this.巷道信息ToolStripMenuItem,
             this.toolStripSeparator1,
-            this.货位信息ToolStripMenuItem,
             this.托盘信息ToolStripMenuItem,
             this.托盘格子设置ToolStripMenuItem,
             this.托盘标签打印ToolStripMenuItem,
@@ -278,13 +281,6 @@ namespace WMS_DANG
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(257, 6);
-            // 
-            // 货位信息ToolStripMenuItem
-            // 
-            this.货位信息ToolStripMenuItem.Name = "货位信息ToolStripMenuItem";
-            this.货位信息ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
-            this.货位信息ToolStripMenuItem.Text = "货位信息";
-            this.货位信息ToolStripMenuItem.Click += new System.EventHandler(this.货位信息ToolStripMenuItem_Click);
             // 
             // 托盘信息ToolStripMenuItem
             // 
@@ -423,6 +419,38 @@ namespace WMS_DANG
             this.身.TabIndex = 5;
             this.身.MouseEnter += new System.EventHandler(this.导航栏显示状态);
             // 
+            // 货位管理ToolStripMenuItem
+            // 
+            this.货位管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.货位初始化ToolStripMenuItem,
+            this.货位状态管理ToolStripMenuItem,
+            this.空货位查询ToolStripMenuItem});
+            this.货位管理ToolStripMenuItem.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.货位管理ToolStripMenuItem.Name = "货位管理ToolStripMenuItem";
+            this.货位管理ToolStripMenuItem.Size = new System.Drawing.Size(141, 34);
+            this.货位管理ToolStripMenuItem.Text = "货位管理";
+            // 
+            // 货位初始化ToolStripMenuItem
+            // 
+            this.货位初始化ToolStripMenuItem.Name = "货位初始化ToolStripMenuItem";
+            this.货位初始化ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.货位初始化ToolStripMenuItem.Text = "货位初始化";
+            this.货位初始化ToolStripMenuItem.Click += new System.EventHandler(this.货位初始化ToolStripMenuItem_Click);
+            // 
+            // 货位状态管理ToolStripMenuItem
+            // 
+            this.货位状态管理ToolStripMenuItem.Name = "货位状态管理ToolStripMenuItem";
+            this.货位状态管理ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.货位状态管理ToolStripMenuItem.Text = "货位状态管理";
+            this.货位状态管理ToolStripMenuItem.Click += new System.EventHandler(this.货位状态管理ToolStripMenuItem_Click);
+            // 
+            // 空货位查询ToolStripMenuItem
+            // 
+            this.空货位查询ToolStripMenuItem.Name = "空货位查询ToolStripMenuItem";
+            this.空货位查询ToolStripMenuItem.Size = new System.Drawing.Size(260, 34);
+            this.空货位查询ToolStripMenuItem.Text = "空货位查询";
+            this.空货位查询ToolStripMenuItem.Click += new System.EventHandler(this.空货位查询ToolStripMenuItem_Click);
+            // 
             // DANG_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -491,10 +519,13 @@ namespace WMS_DANG
         private System.Windows.Forms.ToolStripMenuItem 用户仓库ToolStripMenuItem;
         private System.Windows.Forms.Panel 身;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem 货位信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 托盘信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem 计量单位ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 物料配套ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 货位管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 货位初始化ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 货位状态管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 空货位查询ToolStripMenuItem;
     }
 }
