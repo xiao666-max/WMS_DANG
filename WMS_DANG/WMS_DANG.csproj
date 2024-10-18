@@ -291,6 +291,12 @@
     <EmbeddedResource Include="基础设置\存储策略.resx">
       <DependentUpon>存储策略.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\托盘标签打印.resx">
+      <DependentUpon>托盘标签打印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础设置\托盘格子设置.resx">
+      <DependentUpon>托盘格子设置.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="基础设置\物料信息.resx">
       <DependentUpon>物料信息.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,6 +336,15 @@
     </Compile>
     <EmbeddedResource Include="用户管理\修改密码.resx">
       <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货位管理\空货位查询.resx">
+      <DependentUpon>空货位查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货位管理\货位初始化.resx">
+      <DependentUpon>货位初始化.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货位管理\货位状态管理.resx">
+      <DependentUpon>货位状态管理.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
