@@ -12,6 +12,7 @@ using WMS_DANG.基础设置;
 using WMS_DANG.用户管理;
 using WMS_DANG.通用基础;
 using WMS_DANG.货位管理;
+using WMS_DANG.入出库;
 
 namespace WMS_DANG
 {
@@ -47,6 +48,20 @@ namespace WMS_DANG
         public 货位状态管理 货位状态管理;
         public 空货位查询 空货位查询;
 
+        /// <summary>
+        /// 入出库
+        /// </summary>
+        public Form入库计划 form入库计划1;
+        public Form出库计划 form出库计划1;
+        public Form出库计划设置 form出库计划设置1;
+        public Form出库确认 form出库确认1;
+        public Form创建入库计划 form创建入库计划1;
+        public Form返修件处理 form返修件处理1;
+        public Form空托盘出库 form空托盘出库1;
+        public Form入库组盘 form入库组盘1;
+        public Form移库管理 form移库管理1;
+        public Form作业管理 form作业管理1;
+        public Form入库呼叫托盘 form入库呼叫托盘1; 
 
 
 
@@ -501,6 +516,179 @@ namespace WMS_DANG
                 空货位查询.Activate();
                 SetParent((int)空货位查询.Handle, (int)this.身.Handle);
             }
+        }
+
+        private void 入库计划管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (form入库计划1 == null || form入库计划1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form入库计划1 = new Form入库计划();
+                form入库计划1.TopLevel = false;
+                form入库计划1.Dock = DockStyle.Fill;
+                form入库计划1.Parent = this.身;
+                form入库计划1.Show();
+                SetParent((int)form入库计划1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form入库计划1.Activate();
+                SetParent((int)form入库计划1.Handle, (int)this.身.Handle);
+            }
+
+        }
+
+        private void 入库呼叫托盘ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (form入库呼叫托盘1 == null || form入库呼叫托盘1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form入库呼叫托盘1 = new Form入库呼叫托盘();
+                form入库呼叫托盘1.TopLevel = false;
+                form入库呼叫托盘1.Dock = DockStyle.Fill;
+                form入库呼叫托盘1.Parent = this.身;
+                form入库呼叫托盘1.Show();
+                SetParent((int)form入库呼叫托盘1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form入库呼叫托盘1.Activate();
+                SetParent((int)form入库呼叫托盘1.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 入库组盘ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (form入库组盘1 == null || form入库组盘1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form入库组盘1 = new Form入库组盘();
+                form入库组盘1.TopLevel = false;
+                form入库组盘1.Dock = DockStyle.Fill;
+                form入库组盘1.Parent = this.身;
+                form入库组盘1.Show();
+                SetParent((int)form入库组盘1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form入库组盘1.Activate();
+                SetParent((int)form入库组盘1.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 空托盘入库计划ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //本系统无空托盘管理功能
+        }
+
+        private void 创建入库计划ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (form创建入库计划1 == null || form创建入库计划1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form创建入库计划1 = new Form创建入库计划();
+                form创建入库计划1.TopLevel = false;
+                form创建入库计划1.Dock = DockStyle.Fill;
+                form创建入库计划1.Parent = this.身;
+                form创建入库计划1.Show();
+                SetParent((int)form创建入库计划1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form创建入库计划1.Activate();
+                SetParent((int)form创建入库计划1.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 返修件处理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (form返修件处理1 == null || form返修件处理1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form返修件处理1 = new Form返修件处理();
+                form返修件处理1.TopLevel = false;
+                form返修件处理1.Dock = DockStyle.Fill;
+                form返修件处理1.Parent = this.身;
+                form返修件处理1.Show();
+                SetParent((int)form返修件处理1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form返修件处理1.Activate();
+                SetParent((int)form返修件处理1.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 出库计划管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (form出库计划1 == null || form出库计划1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form出库计划1 = new Form出库计划();
+                form出库计划1.TopLevel = false;
+                form出库计划1.Dock = DockStyle.Fill;
+                form出库计划1.Parent = this.身;
+                form出库计划1.Show();
+                SetParent((int)form出库计划1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form出库计划1.Activate();
+                SetParent((int)form出库计划1.Handle, (int)this.身.Handle);
+            }
+
+        }
+
+        private void 出库计划设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (form出库计划设置1 == null || form出库计划设置1.IsDisposed)
+            {
+                // 打开新的子窗体
+                form出库计划设置1 = new Form出库计划设置();
+                form出库计划设置1.TopLevel = false;
+                form出库计划设置1.Dock = DockStyle.Fill;
+                form出库计划设置1.Parent = this.身;
+                form出库计划设置1.Show();
+                SetParent((int)form出库计划设置1.Handle, (int)this.身.Handle);
+            }
+            else
+            {
+                form出库计划设置1.Activate();
+                SetParent((int)form出库计划设置1.Handle, (int)this.身.Handle);
+            }
+        }
+
+        private void 分拣管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 空托盘出库ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 出库确认ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 拆分条码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 移库管理ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 作业管理ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
