@@ -32,6 +32,12 @@ namespace WMS_DANG.入出库
             this.panel2 = new System.Windows.Forms.Panel();
             this.button生成作业 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label列 = new System.Windows.Forms.Label();
+            this.numericUpDown列 = new System.Windows.Forms.NumericUpDown();
+            this.label层 = new System.Windows.Forms.Label();
+            this.numericUpDown层 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox巷道 = new System.Windows.Forms.ComboBox();
+            this.label巷道 = new System.Windows.Forms.Label();
             this.button查询 = new System.Windows.Forms.Button();
             this.label排 = new System.Windows.Forms.Label();
             this.numericUpDown排 = new System.Windows.Forms.NumericUpDown();
@@ -46,22 +52,16 @@ namespace WMS_DANG.入出库
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label作业明细数量 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox巷道 = new System.Windows.Forms.ComboBox();
-            this.label巷道 = new System.Windows.Forms.Label();
-            this.label层 = new System.Windows.Forms.Label();
-            this.numericUpDown层 = new System.Windows.Forms.NumericUpDown();
-            this.label列 = new System.Windows.Forms.Label();
-            this.numericUpDown列 = new System.Windows.Forms.NumericUpDown();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown列)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown层)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown排)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业明细)).BeginInit();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown层)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown列)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -101,6 +101,59 @@ namespace WMS_DANG.入出库
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1374, 92);
             this.panel1.TabIndex = 7;
+            // 
+            // label列
+            // 
+            this.label列.AutoSize = true;
+            this.label列.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label列.Location = new System.Drawing.Point(407, 60);
+            this.label列.Name = "label列";
+            this.label列.Size = new System.Drawing.Size(17, 12);
+            this.label列.TabIndex = 42;
+            this.label列.Text = "列";
+            // 
+            // numericUpDown列
+            // 
+            this.numericUpDown列.Location = new System.Drawing.Point(439, 56);
+            this.numericUpDown列.Name = "numericUpDown列";
+            this.numericUpDown列.Size = new System.Drawing.Size(243, 21);
+            this.numericUpDown列.TabIndex = 41;
+            // 
+            // label层
+            // 
+            this.label层.AutoSize = true;
+            this.label层.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label层.Location = new System.Drawing.Point(21, 58);
+            this.label层.Name = "label层";
+            this.label层.Size = new System.Drawing.Size(17, 12);
+            this.label层.TabIndex = 40;
+            this.label层.Text = "层";
+            // 
+            // numericUpDown层
+            // 
+            this.numericUpDown层.Location = new System.Drawing.Point(53, 54);
+            this.numericUpDown层.Name = "numericUpDown层";
+            this.numericUpDown层.Size = new System.Drawing.Size(243, 21);
+            this.numericUpDown层.TabIndex = 39;
+            // 
+            // comboBox巷道
+            // 
+            this.comboBox巷道.FormattingEnabled = true;
+            this.comboBox巷道.Location = new System.Drawing.Point(439, 10);
+            this.comboBox巷道.Name = "comboBox巷道";
+            this.comboBox巷道.Size = new System.Drawing.Size(243, 20);
+            this.comboBox巷道.TabIndex = 38;
+            this.comboBox巷道.Text = "==请选择==";
+            // 
+            // label巷道
+            // 
+            this.label巷道.AutoSize = true;
+            this.label巷道.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label巷道.Location = new System.Drawing.Point(395, 14);
+            this.label巷道.Name = "label巷道";
+            this.label巷道.Size = new System.Drawing.Size(29, 12);
+            this.label巷道.TabIndex = 37;
+            this.label巷道.Text = "巷道";
             // 
             // button查询
             // 
@@ -245,59 +298,6 @@ namespace WMS_DANG.入出库
             this.panel5.Size = new System.Drawing.Size(1374, 691);
             this.panel5.TabIndex = 8;
             // 
-            // comboBox巷道
-            // 
-            this.comboBox巷道.FormattingEnabled = true;
-            this.comboBox巷道.Location = new System.Drawing.Point(439, 10);
-            this.comboBox巷道.Name = "comboBox巷道";
-            this.comboBox巷道.Size = new System.Drawing.Size(243, 20);
-            this.comboBox巷道.TabIndex = 38;
-            this.comboBox巷道.Text = "==请选择==";
-            // 
-            // label巷道
-            // 
-            this.label巷道.AutoSize = true;
-            this.label巷道.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label巷道.Location = new System.Drawing.Point(395, 14);
-            this.label巷道.Name = "label巷道";
-            this.label巷道.Size = new System.Drawing.Size(29, 12);
-            this.label巷道.TabIndex = 37;
-            this.label巷道.Text = "巷道";
-            // 
-            // label层
-            // 
-            this.label层.AutoSize = true;
-            this.label层.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label层.Location = new System.Drawing.Point(21, 58);
-            this.label层.Name = "label层";
-            this.label层.Size = new System.Drawing.Size(17, 12);
-            this.label层.TabIndex = 40;
-            this.label层.Text = "层";
-            // 
-            // numericUpDown层
-            // 
-            this.numericUpDown层.Location = new System.Drawing.Point(53, 54);
-            this.numericUpDown层.Name = "numericUpDown层";
-            this.numericUpDown层.Size = new System.Drawing.Size(243, 21);
-            this.numericUpDown层.TabIndex = 39;
-            // 
-            // label列
-            // 
-            this.label列.AutoSize = true;
-            this.label列.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label列.Location = new System.Drawing.Point(407, 60);
-            this.label列.Name = "label列";
-            this.label列.Size = new System.Drawing.Size(17, 12);
-            this.label列.TabIndex = 42;
-            this.label列.Text = "列";
-            // 
-            // numericUpDown列
-            // 
-            this.numericUpDown列.Location = new System.Drawing.Point(439, 56);
-            this.numericUpDown列.Name = "numericUpDown列";
-            this.numericUpDown列.Size = new System.Drawing.Size(243, 21);
-            this.numericUpDown列.TabIndex = 41;
-            // 
             // Form空托盘出库
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -309,6 +309,8 @@ namespace WMS_DANG.入出库
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown列)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown层)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown排)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -318,8 +320,6 @@ namespace WMS_DANG.入出库
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown层)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown列)).EndInit();
             this.ResumeLayout(false);
 
         }
