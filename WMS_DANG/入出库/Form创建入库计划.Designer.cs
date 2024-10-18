@@ -68,9 +68,7 @@ namespace WMS_DANG.入出库
             this.label物料属性 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label作业主表数量 = new System.Windows.Forms.Label();
-            this.dataGridView作业明细 = new System.Windows.Forms.DataGridView();
-            this.label计划明细信息 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.dataGridView计划明细 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label作业明细数量 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -78,8 +76,7 @@ namespace WMS_DANG.入出库
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown计划数量)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业明细)).BeginInit();
-            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划明细)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -453,34 +450,15 @@ namespace WMS_DANG.入出库
             this.label作业主表数量.TabIndex = 2;
             this.label作业主表数量.Text = "共[QQQ]条数据";
             // 
-            // dataGridView作业明细
+            // dataGridView计划明细
             // 
-            this.dataGridView作业明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业明细.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业明细.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView作业明细.Name = "dataGridView作业明细";
-            this.dataGridView作业明细.RowTemplate.Height = 23;
-            this.dataGridView作业明细.Size = new System.Drawing.Size(1374, 581);
-            this.dataGridView作业明细.TabIndex = 0;
-            // 
-            // label计划明细信息
-            // 
-            this.label计划明细信息.AutoSize = true;
-            this.label计划明细信息.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label计划明细信息.Location = new System.Drawing.Point(0, 0);
-            this.label计划明细信息.Name = "label计划明细信息";
-            this.label计划明细信息.Size = new System.Drawing.Size(77, 12);
-            this.label计划明细信息.TabIndex = 1;
-            this.label计划明细信息.Text = "计划明细信息";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label计划明细信息);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1374, 16);
-            this.panel6.TabIndex = 2;
+            this.dataGridView计划明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView计划明细.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView计划明细.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView计划明细.Name = "dataGridView计划明细";
+            this.dataGridView计划明细.RowTemplate.Height = 23;
+            this.dataGridView计划明细.Size = new System.Drawing.Size(1374, 581);
+            this.dataGridView计划明细.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -516,8 +494,7 @@ namespace WMS_DANG.入出库
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.dataGridView作业明细);
+            this.panel5.Controls.Add(this.dataGridView计划明细);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(5, 272);
             this.panel5.Name = "panel5";
@@ -539,9 +516,7 @@ namespace WMS_DANG.入出库
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown计划数量)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业明细)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划明细)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -560,9 +535,7 @@ namespace WMS_DANG.入出库
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button退出;
         private System.Windows.Forms.Label label作业主表数量;
-        private System.Windows.Forms.DataGridView dataGridView作业明细;
-        private System.Windows.Forms.Label label计划明细信息;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.DataGridView dataGridView计划明细;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label作业明细数量;
         private System.Windows.Forms.Panel panel5;

@@ -34,31 +34,30 @@ namespace WMS_DANG.入出库
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label作业明细数量 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView作业明细 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.button添加至目标托盘 = new System.Windows.Forms.Button();
             this.label目标托盘信息 = new System.Windows.Forms.Label();
+            this.button退出 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox装配条码 = new System.Windows.Forms.TextBox();
+            this.label装配条码 = new System.Windows.Forms.Label();
+            this.textBox批次 = new System.Windows.Forms.TextBox();
+            this.label批次 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label原托盘信息 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox物料 = new System.Windows.Forms.TextBox();
             this.label物料 = new System.Windows.Forms.Label();
-            this.button退出 = new System.Windows.Forms.Button();
             this.button查询 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button启动计划 = new System.Windows.Forms.Button();
             this.label装配指令信息 = new System.Windows.Forms.Label();
             this.dataGridView作业主表 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label原托盘信息 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox批次 = new System.Windows.Forms.TextBox();
-            this.label批次 = new System.Windows.Forms.Label();
-            this.textBox装配条码 = new System.Windows.Forms.TextBox();
-            this.label装配条码 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业明细)).BeginInit();
@@ -119,7 +118,6 @@ namespace WMS_DANG.入出库
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.dataGridView作业明细);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(5, 431);
@@ -127,22 +125,14 @@ namespace WMS_DANG.入出库
             this.panel5.Size = new System.Drawing.Size(1374, 403);
             this.panel5.TabIndex = 8;
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1374, 10);
-            this.panel6.TabIndex = 2;
-            // 
             // dataGridView作业明细
             // 
             this.dataGridView作业明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业明细.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业明细.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView作业明细.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView作业明细.Location = new System.Drawing.Point(0, 100);
             this.dataGridView作业明细.Name = "dataGridView作业明细";
             this.dataGridView作业明细.RowTemplate.Height = 23;
-            this.dataGridView作业明细.Size = new System.Drawing.Size(1374, 403);
+            this.dataGridView作业明细.Size = new System.Drawing.Size(1374, 303);
             this.dataGridView作业明细.TabIndex = 0;
             // 
             // panel4
@@ -158,6 +148,32 @@ namespace WMS_DANG.入出库
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1374, 44);
             this.panel4.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
+            this.label3.Location = new System.Drawing.Point(278, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 12);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "回车进行查询";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(172, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(101, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "目标托盘号";
             // 
             // button添加至目标托盘
             // 
@@ -179,6 +195,15 @@ namespace WMS_DANG.入出库
             this.label目标托盘信息.TabIndex = 2;
             this.label目标托盘信息.Text = "目标托盘信息";
             // 
+            // button退出
+            // 
+            this.button退出.Location = new System.Drawing.Point(1224, 5);
+            this.button退出.Name = "button退出";
+            this.button退出.Size = new System.Drawing.Size(110, 32);
+            this.button退出.TabIndex = 8;
+            this.button退出.Text = "退出";
+            this.button退出.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.textBox装配条码);
@@ -199,6 +224,66 @@ namespace WMS_DANG.入出库
             this.panel1.Size = new System.Drawing.Size(1374, 49);
             this.panel1.TabIndex = 7;
             // 
+            // textBox装配条码
+            // 
+            this.textBox装配条码.Location = new System.Drawing.Point(854, 15);
+            this.textBox装配条码.Name = "textBox装配条码";
+            this.textBox装配条码.Size = new System.Drawing.Size(100, 21);
+            this.textBox装配条码.TabIndex = 21;
+            // 
+            // label装配条码
+            // 
+            this.label装配条码.AutoSize = true;
+            this.label装配条码.Location = new System.Drawing.Point(791, 19);
+            this.label装配条码.Name = "label装配条码";
+            this.label装配条码.Size = new System.Drawing.Size(53, 12);
+            this.label装配条码.TabIndex = 20;
+            this.label装配条码.Text = "装配条码";
+            // 
+            // textBox批次
+            // 
+            this.textBox批次.Location = new System.Drawing.Point(655, 14);
+            this.textBox批次.Name = "textBox批次";
+            this.textBox批次.Size = new System.Drawing.Size(100, 21);
+            this.textBox批次.TabIndex = 19;
+            // 
+            // label批次
+            // 
+            this.label批次.AutoSize = true;
+            this.label批次.Location = new System.Drawing.Point(619, 18);
+            this.label批次.Name = "label批次";
+            this.label批次.Size = new System.Drawing.Size(29, 12);
+            this.label批次.TabIndex = 18;
+            this.label批次.Text = "批次";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(439, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 32);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "查询";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label原托盘信息
+            // 
+            this.label原托盘信息.AutoSize = true;
+            this.label原托盘信息.ForeColor = System.Drawing.Color.Maroon;
+            this.label原托盘信息.Location = new System.Drawing.Point(7, 9);
+            this.label原托盘信息.Name = "label原托盘信息";
+            this.label原托盘信息.Size = new System.Drawing.Size(65, 12);
+            this.label原托盘信息.TabIndex = 16;
+            this.label原托盘信息.Text = "原托盘信息";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 12);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "共[QQQ]条数据";
+            // 
             // textBox物料
             // 
             this.textBox物料.Location = new System.Drawing.Point(331, 15);
@@ -214,15 +299,6 @@ namespace WMS_DANG.入出库
             this.label物料.Size = new System.Drawing.Size(29, 12);
             this.label物料.TabIndex = 11;
             this.label物料.Text = "物料";
-            // 
-            // button退出
-            // 
-            this.button退出.Location = new System.Drawing.Point(1224, 5);
-            this.button退出.Name = "button退出";
-            this.button退出.Size = new System.Drawing.Size(110, 32);
-            this.button退出.TabIndex = 8;
-            this.button退出.Text = "退出";
-            this.button退出.UseVisualStyleBackColor = true;
             // 
             // button查询
             // 
@@ -274,98 +350,12 @@ namespace WMS_DANG.入出库
             // dataGridView作业主表
             // 
             this.dataGridView作业主表.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业主表.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业主表.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView作业主表.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView作业主表.Location = new System.Drawing.Point(0, 46);
             this.dataGridView作业主表.Name = "dataGridView作业主表";
             this.dataGridView作业主表.RowTemplate.Height = 23;
-            this.dataGridView作业主表.Size = new System.Drawing.Size(1374, 309);
+            this.dataGridView作业主表.Size = new System.Drawing.Size(1374, 263);
             this.dataGridView作业主表.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 12);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "共[QQQ]条数据";
-            // 
-            // label原托盘信息
-            // 
-            this.label原托盘信息.AutoSize = true;
-            this.label原托盘信息.ForeColor = System.Drawing.Color.Maroon;
-            this.label原托盘信息.Location = new System.Drawing.Point(7, 9);
-            this.label原托盘信息.Name = "label原托盘信息";
-            this.label原托盘信息.Size = new System.Drawing.Size(65, 12);
-            this.label原托盘信息.TabIndex = 16;
-            this.label原托盘信息.Text = "原托盘信息";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(439, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 32);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox批次
-            // 
-            this.textBox批次.Location = new System.Drawing.Point(655, 14);
-            this.textBox批次.Name = "textBox批次";
-            this.textBox批次.Size = new System.Drawing.Size(100, 21);
-            this.textBox批次.TabIndex = 19;
-            // 
-            // label批次
-            // 
-            this.label批次.AutoSize = true;
-            this.label批次.Location = new System.Drawing.Point(619, 18);
-            this.label批次.Name = "label批次";
-            this.label批次.Size = new System.Drawing.Size(29, 12);
-            this.label批次.TabIndex = 18;
-            this.label批次.Text = "批次";
-            // 
-            // textBox装配条码
-            // 
-            this.textBox装配条码.Location = new System.Drawing.Point(854, 15);
-            this.textBox装配条码.Name = "textBox装配条码";
-            this.textBox装配条码.Size = new System.Drawing.Size(100, 21);
-            this.textBox装配条码.TabIndex = 21;
-            // 
-            // label装配条码
-            // 
-            this.label装配条码.AutoSize = true;
-            this.label装配条码.Location = new System.Drawing.Point(791, 19);
-            this.label装配条码.Name = "label装配条码";
-            this.label装配条码.Size = new System.Drawing.Size(53, 12);
-            this.label装配条码.TabIndex = 20;
-            this.label装配条码.Text = "装配条码";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(172, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(101, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "目标托盘号";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(278, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 12);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "回车进行查询";
             // 
             // Form拆分条码
             // 
@@ -406,7 +396,6 @@ namespace WMS_DANG.入出库
         private System.Windows.Forms.Button button添加至目标托盘;
         private System.Windows.Forms.Label label作业明细数量;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dataGridView作业明细;
         private System.Windows.Forms.Button button查询;
         private System.Windows.Forms.TextBox textBox物料;

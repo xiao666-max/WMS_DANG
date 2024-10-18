@@ -36,41 +36,41 @@ namespace WMS_DANG.入出库
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label已经启动的装配指令信息 = new System.Windows.Forms.Label();
-            this.dataGridView作业明细 = new System.Windows.Forms.DataGridView();
+            this.button查询计划 = new System.Windows.Forms.Button();
+            this.button取消计划 = new System.Windows.Forms.Button();
+            this.dataGridView计划明细 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button退出 = new System.Windows.Forms.Button();
             this.button申请货位 = new System.Windows.Forms.Button();
             this.button设置恢复 = new System.Windows.Forms.Button();
-            this.button取消计划 = new System.Windows.Forms.Button();
-            this.button查询计划 = new System.Windows.Forms.Button();
             this.button删除作业 = new System.Windows.Forms.Button();
             this.label作业主表数量 = new System.Windows.Forms.Label();
             this.button设置完成 = new System.Windows.Forms.Button();
             this.button到达拣货口 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker结束 = new System.Windows.Forms.DateTimePicker();
+            this.label需求时间 = new System.Windows.Forms.Label();
+            this.dateTimePicker开始 = new System.Windows.Forms.DateTimePicker();
+            this.textBox站位 = new System.Windows.Forms.TextBox();
+            this.label站位 = new System.Windows.Forms.Label();
+            this.label架次 = new System.Windows.Forms.Label();
+            this.numericUpDown架次 = new System.Windows.Forms.NumericUpDown();
+            this.button退出 = new System.Windows.Forms.Button();
             this.button查询 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label装配指令信息 = new System.Windows.Forms.Label();
-            this.dataGridView作业主表 = new System.Windows.Forms.DataGridView();
-            this.numericUpDown架次 = new System.Windows.Forms.NumericUpDown();
-            this.label架次 = new System.Windows.Forms.Label();
-            this.textBox站位 = new System.Windows.Forms.TextBox();
-            this.label站位 = new System.Windows.Forms.Label();
-            this.dateTimePicker开始 = new System.Windows.Forms.DateTimePicker();
-            this.label需求时间 = new System.Windows.Forms.Label();
-            this.dateTimePicker结束 = new System.Windows.Forms.DateTimePicker();
             this.button启动计划 = new System.Windows.Forms.Button();
+            this.label装配指令信息 = new System.Windows.Forms.Label();
+            this.dataGridView计划主表 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业明细)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划明细)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown架次)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown架次)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划主表)).BeginInit();
             this.SuspendLayout();
             // 
             // label构型
@@ -124,7 +124,7 @@ namespace WMS_DANG.入出库
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.dataGridView作业明细);
+            this.panel5.Controls.Add(this.dataGridView计划明细);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(5, 431);
             this.panel5.Name = "panel5";
@@ -151,15 +151,33 @@ namespace WMS_DANG.入出库
             this.label已经启动的装配指令信息.TabIndex = 1;
             this.label已经启动的装配指令信息.Text = "已经启动的装配指令信息";
             // 
-            // dataGridView作业明细
+            // button查询计划
             // 
-            this.dataGridView作业明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业明细.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业明细.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView作业明细.Name = "dataGridView作业明细";
-            this.dataGridView作业明细.RowTemplate.Height = 23;
-            this.dataGridView作业明细.Size = new System.Drawing.Size(1374, 403);
-            this.dataGridView作业明细.TabIndex = 0;
+            this.button查询计划.Location = new System.Drawing.Point(479, 7);
+            this.button查询计划.Name = "button查询计划";
+            this.button查询计划.Size = new System.Drawing.Size(110, 32);
+            this.button查询计划.TabIndex = 4;
+            this.button查询计划.Text = "查询";
+            this.button查询计划.UseVisualStyleBackColor = true;
+            // 
+            // button取消计划
+            // 
+            this.button取消计划.Location = new System.Drawing.Point(596, 7);
+            this.button取消计划.Name = "button取消计划";
+            this.button取消计划.Size = new System.Drawing.Size(110, 32);
+            this.button取消计划.TabIndex = 5;
+            this.button取消计划.Text = "取消计划";
+            this.button取消计划.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView计划明细
+            // 
+            this.dataGridView计划明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView计划明细.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView计划明细.Location = new System.Drawing.Point(0, 130);
+            this.dataGridView计划明细.Name = "dataGridView计划明细";
+            this.dataGridView计划明细.RowTemplate.Height = 23;
+            this.dataGridView计划明细.Size = new System.Drawing.Size(1374, 273);
+            this.dataGridView计划明细.TabIndex = 0;
             // 
             // panel4
             // 
@@ -174,15 +192,6 @@ namespace WMS_DANG.入出库
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1374, 44);
             this.panel4.TabIndex = 7;
-            // 
-            // button退出
-            // 
-            this.button退出.Location = new System.Drawing.Point(1177, 9);
-            this.button退出.Name = "button退出";
-            this.button退出.Size = new System.Drawing.Size(110, 32);
-            this.button退出.TabIndex = 8;
-            this.button退出.Text = "退出";
-            this.button退出.UseVisualStyleBackColor = true;
             // 
             // button申请货位
             // 
@@ -203,24 +212,6 @@ namespace WMS_DANG.入出库
             this.button设置恢复.Text = "设置恢复";
             this.button设置恢复.UseVisualStyleBackColor = true;
             this.button设置恢复.Visible = false;
-            // 
-            // button取消计划
-            // 
-            this.button取消计划.Location = new System.Drawing.Point(596, 7);
-            this.button取消计划.Name = "button取消计划";
-            this.button取消计划.Size = new System.Drawing.Size(110, 32);
-            this.button取消计划.TabIndex = 5;
-            this.button取消计划.Text = "取消计划";
-            this.button取消计划.UseVisualStyleBackColor = true;
-            // 
-            // button查询计划
-            // 
-            this.button查询计划.Location = new System.Drawing.Point(479, 7);
-            this.button查询计划.Name = "button查询计划";
-            this.button查询计划.Size = new System.Drawing.Size(110, 32);
-            this.button查询计划.TabIndex = 4;
-            this.button查询计划.Text = "查询";
-            this.button查询计划.UseVisualStyleBackColor = true;
             // 
             // button删除作业
             // 
@@ -280,69 +271,28 @@ namespace WMS_DANG.入出库
             this.panel1.Size = new System.Drawing.Size(1374, 49);
             this.panel1.TabIndex = 7;
             // 
-            // button查询
+            // dateTimePicker结束
             // 
-            this.button查询.Location = new System.Drawing.Point(1037, 9);
-            this.button查询.Name = "button查询";
-            this.button查询.Size = new System.Drawing.Size(110, 32);
-            this.button查询.TabIndex = 6;
-            this.button查询.Text = "查询";
-            this.button查询.UseVisualStyleBackColor = true;
+            this.dateTimePicker结束.Location = new System.Drawing.Point(767, 15);
+            this.dateTimePicker结束.Name = "dateTimePicker结束";
+            this.dateTimePicker结束.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker结束.TabIndex = 15;
             // 
-            // panel2
+            // label需求时间
             // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.dataGridView作业主表);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(5, 62);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1374, 309);
-            this.panel2.TabIndex = 7;
+            this.label需求时间.AutoSize = true;
+            this.label需求时间.Location = new System.Drawing.Point(546, 19);
+            this.label需求时间.Name = "label需求时间";
+            this.label需求时间.Size = new System.Drawing.Size(53, 12);
+            this.label需求时间.TabIndex = 14;
+            this.label需求时间.Text = "需求时间";
             // 
-            // panel3
+            // dateTimePicker开始
             // 
-            this.panel3.Controls.Add(this.button启动计划);
-            this.panel3.Controls.Add(this.label装配指令信息);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1374, 40);
-            this.panel3.TabIndex = 2;
-            // 
-            // label装配指令信息
-            // 
-            this.label装配指令信息.AutoSize = true;
-            this.label装配指令信息.Location = new System.Drawing.Point(12, 13);
-            this.label装配指令信息.Name = "label装配指令信息";
-            this.label装配指令信息.Size = new System.Drawing.Size(77, 12);
-            this.label装配指令信息.TabIndex = 1;
-            this.label装配指令信息.Text = "装配指令信息";
-            // 
-            // dataGridView作业主表
-            // 
-            this.dataGridView作业主表.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业主表.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业主表.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView作业主表.Name = "dataGridView作业主表";
-            this.dataGridView作业主表.RowTemplate.Height = 23;
-            this.dataGridView作业主表.Size = new System.Drawing.Size(1374, 309);
-            this.dataGridView作业主表.TabIndex = 0;
-            // 
-            // numericUpDown架次
-            // 
-            this.numericUpDown架次.Location = new System.Drawing.Point(214, 15);
-            this.numericUpDown架次.Name = "numericUpDown架次";
-            this.numericUpDown架次.Size = new System.Drawing.Size(120, 21);
-            this.numericUpDown架次.TabIndex = 9;
-            // 
-            // label架次
-            // 
-            this.label架次.AutoSize = true;
-            this.label架次.Location = new System.Drawing.Point(179, 19);
-            this.label架次.Name = "label架次";
-            this.label架次.Size = new System.Drawing.Size(29, 12);
-            this.label架次.TabIndex = 10;
-            this.label架次.Text = "架次";
+            this.dateTimePicker开始.Location = new System.Drawing.Point(605, 15);
+            this.dateTimePicker开始.Name = "dateTimePicker开始";
+            this.dateTimePicker开始.Size = new System.Drawing.Size(141, 21);
+            this.dateTimePicker开始.TabIndex = 13;
             // 
             // textBox站位
             // 
@@ -360,28 +310,59 @@ namespace WMS_DANG.入出库
             this.label站位.TabIndex = 11;
             this.label站位.Text = "站位";
             // 
-            // dateTimePicker开始
+            // label架次
             // 
-            this.dateTimePicker开始.Location = new System.Drawing.Point(605, 15);
-            this.dateTimePicker开始.Name = "dateTimePicker开始";
-            this.dateTimePicker开始.Size = new System.Drawing.Size(141, 21);
-            this.dateTimePicker开始.TabIndex = 13;
+            this.label架次.AutoSize = true;
+            this.label架次.Location = new System.Drawing.Point(179, 19);
+            this.label架次.Name = "label架次";
+            this.label架次.Size = new System.Drawing.Size(29, 12);
+            this.label架次.TabIndex = 10;
+            this.label架次.Text = "架次";
             // 
-            // label需求时间
+            // numericUpDown架次
             // 
-            this.label需求时间.AutoSize = true;
-            this.label需求时间.Location = new System.Drawing.Point(546, 19);
-            this.label需求时间.Name = "label需求时间";
-            this.label需求时间.Size = new System.Drawing.Size(53, 12);
-            this.label需求时间.TabIndex = 14;
-            this.label需求时间.Text = "需求时间";
+            this.numericUpDown架次.Location = new System.Drawing.Point(214, 15);
+            this.numericUpDown架次.Name = "numericUpDown架次";
+            this.numericUpDown架次.Size = new System.Drawing.Size(120, 21);
+            this.numericUpDown架次.TabIndex = 9;
             // 
-            // dateTimePicker结束
+            // button退出
             // 
-            this.dateTimePicker结束.Location = new System.Drawing.Point(767, 15);
-            this.dateTimePicker结束.Name = "dateTimePicker结束";
-            this.dateTimePicker结束.Size = new System.Drawing.Size(130, 21);
-            this.dateTimePicker结束.TabIndex = 15;
+            this.button退出.Location = new System.Drawing.Point(1177, 9);
+            this.button退出.Name = "button退出";
+            this.button退出.Size = new System.Drawing.Size(110, 32);
+            this.button退出.TabIndex = 8;
+            this.button退出.Text = "退出";
+            this.button退出.UseVisualStyleBackColor = true;
+            // 
+            // button查询
+            // 
+            this.button查询.Location = new System.Drawing.Point(1037, 9);
+            this.button查询.Name = "button查询";
+            this.button查询.Size = new System.Drawing.Size(110, 32);
+            this.button查询.TabIndex = 6;
+            this.button查询.Text = "查询";
+            this.button查询.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.dataGridView计划主表);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(5, 62);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1374, 309);
+            this.panel2.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button启动计划);
+            this.panel3.Controls.Add(this.label装配指令信息);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1374, 40);
+            this.panel3.TabIndex = 2;
             // 
             // button启动计划
             // 
@@ -392,6 +373,25 @@ namespace WMS_DANG.入出库
             this.button启动计划.Text = "启动计划";
             this.button启动计划.UseVisualStyleBackColor = true;
             // 
+            // label装配指令信息
+            // 
+            this.label装配指令信息.AutoSize = true;
+            this.label装配指令信息.Location = new System.Drawing.Point(12, 13);
+            this.label装配指令信息.Name = "label装配指令信息";
+            this.label装配指令信息.Size = new System.Drawing.Size(77, 12);
+            this.label装配指令信息.TabIndex = 1;
+            this.label装配指令信息.Text = "装配指令信息";
+            // 
+            // dataGridView计划主表
+            // 
+            this.dataGridView计划主表.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView计划主表.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView计划主表.Location = new System.Drawing.Point(0, 46);
+            this.dataGridView计划主表.Name = "dataGridView计划主表";
+            this.dataGridView计划主表.RowTemplate.Height = 23;
+            this.dataGridView计划主表.Size = new System.Drawing.Size(1374, 263);
+            this.dataGridView计划主表.TabIndex = 0;
+            // 
             // Form出库计划设置
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -399,22 +399,22 @@ namespace WMS_DANG.入出库
             this.ClientSize = new System.Drawing.Size(1384, 861);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form出库计划设置";
-            this.Text = "作业管理";
+            this.Text = "出库计划设置";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业明细)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划明细)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown架次)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown架次)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划主表)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,7 +426,7 @@ namespace WMS_DANG.入出库
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label装配指令信息;
-        private System.Windows.Forms.DataGridView dataGridView作业主表;
+        private System.Windows.Forms.DataGridView dataGridView计划主表;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button设置完成;
@@ -442,7 +442,7 @@ namespace WMS_DANG.入出库
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label已经启动的装配指令信息;
-        private System.Windows.Forms.DataGridView dataGridView作业明细;
+        private System.Windows.Forms.DataGridView dataGridView计划明细;
         private System.Windows.Forms.Button button查询;
         private System.Windows.Forms.TextBox textBox站位;
         private System.Windows.Forms.Label label站位;

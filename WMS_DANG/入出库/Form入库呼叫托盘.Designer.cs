@@ -30,17 +30,18 @@ namespace WMS_DANG.入出库
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label计划主表信息 = new System.Windows.Forms.Label();
             this.dataGridView作业主表 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel呼叫托盘 = new System.Windows.Forms.Panel();
             this.button呼叫托盘 = new System.Windows.Forms.Button();
             this.button退出 = new System.Windows.Forms.Button();
             this.panel选择条件 = new System.Windows.Forms.Panel();
+            this.radioButton图号 = new System.Windows.Forms.RadioButton();
+            this.radioButton周转箱 = new System.Windows.Forms.RadioButton();
+            this.radioButton条码 = new System.Windows.Forms.RadioButton();
+            this.radioButton批次 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox物料 = new System.Windows.Forms.TextBox();
-            this.label托盘号 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button托盘回库 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,7 +51,6 @@ namespace WMS_DANG.入出库
             this.label起始时间 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel呼叫托盘.SuspendLayout();
@@ -62,31 +62,12 @@ namespace WMS_DANG.入出库
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.dataGridView作业主表);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 55);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1374, 753);
             this.panel2.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label计划主表信息);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1374, 16);
-            this.panel3.TabIndex = 2;
-            // 
-            // label计划主表信息
-            // 
-            this.label计划主表信息.AutoSize = true;
-            this.label计划主表信息.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label计划主表信息.Location = new System.Drawing.Point(0, 0);
-            this.label计划主表信息.Name = "label计划主表信息";
-            this.label计划主表信息.Size = new System.Drawing.Size(0, 12);
-            this.label计划主表信息.TabIndex = 1;
             // 
             // dataGridView作业主表
             // 
@@ -113,7 +94,7 @@ namespace WMS_DANG.入出库
             // 
             this.panel呼叫托盘.Controls.Add(this.button呼叫托盘);
             this.panel呼叫托盘.Controls.Add(this.button退出);
-            this.panel呼叫托盘.Location = new System.Drawing.Point(274, 3);
+            this.panel呼叫托盘.Location = new System.Drawing.Point(523, 3);
             this.panel呼叫托盘.Name = "panel呼叫托盘";
             this.panel呼叫托盘.Size = new System.Drawing.Size(298, 36);
             this.panel呼叫托盘.TabIndex = 20;
@@ -124,7 +105,7 @@ namespace WMS_DANG.入出库
             this.button呼叫托盘.Name = "button呼叫托盘";
             this.button呼叫托盘.Size = new System.Drawing.Size(110, 32);
             this.button呼叫托盘.TabIndex = 19;
-            this.button呼叫托盘.Text = "返厂确认";
+            this.button呼叫托盘.Text = "呼叫托盘";
             this.button呼叫托盘.UseVisualStyleBackColor = true;
             // 
             // button退出
@@ -138,18 +119,65 @@ namespace WMS_DANG.入出库
             // 
             // panel选择条件
             // 
+            this.panel选择条件.Controls.Add(this.radioButton图号);
+            this.panel选择条件.Controls.Add(this.radioButton周转箱);
+            this.panel选择条件.Controls.Add(this.radioButton条码);
+            this.panel选择条件.Controls.Add(this.radioButton批次);
             this.panel选择条件.Controls.Add(this.label5);
             this.panel选择条件.Controls.Add(this.textBox物料);
-            this.panel选择条件.Controls.Add(this.label托盘号);
             this.panel选择条件.Location = new System.Drawing.Point(3, 3);
             this.panel选择条件.Name = "panel选择条件";
-            this.panel选择条件.Size = new System.Drawing.Size(259, 36);
+            this.panel选择条件.Size = new System.Drawing.Size(505, 36);
             this.panel选择条件.TabIndex = 14;
+            // 
+            // radioButton图号
+            // 
+            this.radioButton图号.AutoSize = true;
+            this.radioButton图号.Location = new System.Drawing.Point(182, 10);
+            this.radioButton图号.Name = "radioButton图号";
+            this.radioButton图号.Size = new System.Drawing.Size(47, 16);
+            this.radioButton图号.TabIndex = 10;
+            this.radioButton图号.TabStop = true;
+            this.radioButton图号.Text = "图号";
+            this.radioButton图号.UseVisualStyleBackColor = true;
+            // 
+            // radioButton周转箱
+            // 
+            this.radioButton周转箱.AutoSize = true;
+            this.radioButton周转箱.Location = new System.Drawing.Point(115, 10);
+            this.radioButton周转箱.Name = "radioButton周转箱";
+            this.radioButton周转箱.Size = new System.Drawing.Size(59, 16);
+            this.radioButton周转箱.TabIndex = 9;
+            this.radioButton周转箱.TabStop = true;
+            this.radioButton周转箱.Text = "周转箱";
+            this.radioButton周转箱.UseVisualStyleBackColor = true;
+            // 
+            // radioButton条码
+            // 
+            this.radioButton条码.AutoSize = true;
+            this.radioButton条码.Location = new System.Drawing.Point(60, 10);
+            this.radioButton条码.Name = "radioButton条码";
+            this.radioButton条码.Size = new System.Drawing.Size(47, 16);
+            this.radioButton条码.TabIndex = 8;
+            this.radioButton条码.TabStop = true;
+            this.radioButton条码.Text = "条码";
+            this.radioButton条码.UseVisualStyleBackColor = true;
+            // 
+            // radioButton批次
+            // 
+            this.radioButton批次.AutoSize = true;
+            this.radioButton批次.Location = new System.Drawing.Point(5, 10);
+            this.radioButton批次.Name = "radioButton批次";
+            this.radioButton批次.Size = new System.Drawing.Size(47, 16);
+            this.radioButton批次.TabIndex = 7;
+            this.radioButton批次.TabStop = true;
+            this.radioButton批次.Text = "批次";
+            this.radioButton批次.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(167, 12);
+            this.label5.Location = new System.Drawing.Point(410, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 12);
             this.label5.TabIndex = 6;
@@ -157,19 +185,10 @@ namespace WMS_DANG.入出库
             // 
             // textBox物料
             // 
-            this.textBox物料.Location = new System.Drawing.Point(64, 8);
+            this.textBox物料.Location = new System.Drawing.Point(235, 6);
             this.textBox物料.Name = "textBox物料";
-            this.textBox物料.Size = new System.Drawing.Size(97, 21);
+            this.textBox物料.Size = new System.Drawing.Size(160, 21);
             this.textBox物料.TabIndex = 5;
-            // 
-            // label托盘号
-            // 
-            this.label托盘号.AutoSize = true;
-            this.label托盘号.Location = new System.Drawing.Point(18, 12);
-            this.label托盘号.Name = "label托盘号";
-            this.label托盘号.Size = new System.Drawing.Size(41, 12);
-            this.label托盘号.TabIndex = 4;
-            this.label托盘号.Text = "托盘号";
             // 
             // panel4
             // 
@@ -262,10 +281,8 @@ namespace WMS_DANG.入出库
             this.ClientSize = new System.Drawing.Size(1384, 861);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form入库呼叫托盘";
-            this.Text = "返修件处理";
+            this.Text = "入库呼叫托盘";
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel呼叫托盘.ResumeLayout(false);
@@ -283,8 +300,6 @@ namespace WMS_DANG.入出库
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label计划主表信息;
         private System.Windows.Forms.DataGridView dataGridView作业主表;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel呼叫托盘;
@@ -293,7 +308,6 @@ namespace WMS_DANG.入出库
         private System.Windows.Forms.Panel panel选择条件;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox物料;
-        private System.Windows.Forms.Label label托盘号;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button托盘回库;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -302,5 +316,9 @@ namespace WMS_DANG.入出库
         private System.Windows.Forms.DateTimePicker dateTimePicker起始时间;
         private System.Windows.Forms.Label label起始时间;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.RadioButton radioButton图号;
+        private System.Windows.Forms.RadioButton radioButton周转箱;
+        private System.Windows.Forms.RadioButton radioButton条码;
+        private System.Windows.Forms.RadioButton radioButton批次;
     }
 }

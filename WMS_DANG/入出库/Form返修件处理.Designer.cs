@@ -30,9 +30,7 @@ namespace WMS_DANG.入出库
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label计划主表信息 = new System.Windows.Forms.Label();
-            this.dataGridView作业主表 = new System.Windows.Forms.DataGridView();
+            this.dataGridView计划明细 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel呼叫托盘 = new System.Windows.Forms.Panel();
             this.button呼叫托盘 = new System.Windows.Forms.Button();
@@ -50,8 +48,7 @@ namespace WMS_DANG.入出库
             this.label起始时间 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划明细)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel呼叫托盘.SuspendLayout();
             this.panel选择条件.SuspendLayout();
@@ -62,42 +59,23 @@ namespace WMS_DANG.入出库
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.dataGridView作业主表);
+            this.panel2.Controls.Add(this.dataGridView计划明细);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 55);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1374, 753);
             this.panel2.TabIndex = 7;
             // 
-            // panel3
+            // dataGridView计划明细
             // 
-            this.panel3.Controls.Add(this.label计划主表信息);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1374, 16);
-            this.panel3.TabIndex = 2;
-            // 
-            // label计划主表信息
-            // 
-            this.label计划主表信息.AutoSize = true;
-            this.label计划主表信息.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label计划主表信息.Location = new System.Drawing.Point(0, 0);
-            this.label计划主表信息.Name = "label计划主表信息";
-            this.label计划主表信息.Size = new System.Drawing.Size(0, 12);
-            this.label计划主表信息.TabIndex = 1;
-            // 
-            // dataGridView作业主表
-            // 
-            this.dataGridView作业主表.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView作业主表.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView作业主表.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView作业主表.Name = "dataGridView作业主表";
-            this.dataGridView作业主表.RowTemplate.Height = 23;
-            this.dataGridView作业主表.Size = new System.Drawing.Size(1374, 753);
-            this.dataGridView作业主表.TabIndex = 0;
-            this.dataGridView作业主表.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView作业主表_CellContentClick);
+            this.dataGridView计划明细.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView计划明细.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView计划明细.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView计划明细.Name = "dataGridView计划明细";
+            this.dataGridView计划明细.RowTemplate.Height = 23;
+            this.dataGridView计划明细.Size = new System.Drawing.Size(1374, 753);
+            this.dataGridView计划明细.TabIndex = 0;
+            this.dataGridView计划明细.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView作业主表_CellContentClick);
             // 
             // panel1
             // 
@@ -264,9 +242,7 @@ namespace WMS_DANG.入出库
             this.Name = "Form返修件处理";
             this.Text = "返修件处理";
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView作业主表)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView计划明细)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel呼叫托盘.ResumeLayout(false);
             this.panel选择条件.ResumeLayout(false);
@@ -283,9 +259,7 @@ namespace WMS_DANG.入出库
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label计划主表信息;
-        private System.Windows.Forms.DataGridView dataGridView作业主表;
+        private System.Windows.Forms.DataGridView dataGridView计划明细;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel呼叫托盘;
         private System.Windows.Forms.Button button呼叫托盘;

@@ -37,9 +37,12 @@
     <ApplicationIcon>c1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +52,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DANG_Main.cs">
@@ -276,6 +281,12 @@
     <EmbeddedResource Include="DANG_Main.resx">
       <DependentUpon>DANG_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="入出库\Form入库组盘.resx">
+      <DependentUpon>Form入库组盘.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="入出库\Form入库计划.resx">
+      <DependentUpon>Form入库计划.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form分拣管理.resx">
       <DependentUpon>Form分拣管理.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form出库计划.resx">
       <DependentUpon>Form出库计划.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="入出库\Form创建入库计划.resx">
+      <DependentUpon>Form创建入库计划.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="入出库\Form移库管理.resx">
       <DependentUpon>Form移库管理.cs</DependentUpon>
